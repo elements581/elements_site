@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бізнес-консалтинг</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/product-modal.css" />
+    <script src="./scripts/main.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="modal-wrapper" id="product-modal">
+      <div class="product-modal">
+            <div class="modal-header" id="modal-header">
+              <img
+                src="./icons/busines-consulting.svg"
+                alt="Бізнес-консалтинг"
+                class="modal-header-icon"
+              />
+              <h2 class="modal-title">Бізнес-консалтинг</h2>
+            </div>
+            <a
+            href="./index.html"
+            id="close-modal"
+            class="modal-close-btn"
+            type="button"
+            title="закрити"
+            aria-label="закрити"
+          >
+            &times;
+            </a>
+            <div class="modal-body">
+              <artcicle class="modal-card-action">
+                  <ul class="modal-list-1">
+                      <li class="modal-card-text">Проблеми з продажами заважають вам спати ночами?</li>
+                      <li class="modal-card-text">Доходи не ростуть, а команда працює неефективно?</li>
+                      <li class="modal-card-text">Ви хочете впровадити систему, яка дасть стабільний прибуток?</li>
+                  </ul>
+                  <a 
+                  href="#modal-header"
+                  class="modal-body-btn open-form-button" 
+                  type="button"
+                  title="Перейти"
+                  aria-label="Перейти">Дізнатися більше
+                  <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
+                  </a>
+              </artcicle>
+              <article class="modal-card-info">
+                  <p class="modal-info-text">Створюємо таку систему, яка дозволить Вам масштабувати бізнес без втрат у якості, 
+                  у часі та без стресу.
+              </p>
+              <h4 class="card-info-title">В результаті ви отримуєте:</h4>
+              <ul>
+                  <li class="card-info-item">
+                      <img class="card-info-badge" src="./icons/checkmark-badge-03.svg" alt="icon" />
+                      <p class="card-info-text">X2-X5 зростання доходів,</p>
+                 </li>
+                  <li class="card-info-item">
+                      <img class="card-info-badge" src="./icons/checkmark-badge-03.svg" alt="icon" />
+                      <p class="card-info-text">системність,</p>
+                  </li>
+                  <li class="card-info-item">
+                      <img class="card-info-badge" src="./icons/checkmark-badge-03.svg" alt="icon" />
+                      <p class="card-info-text">швидкість,</p> 
+                  </li>
+                  <li class="card-info-item">
+                      <img class="card-info-badge" src="./icons/checkmark-badge-03.svg" alt="icon" />
+                      <p class="card-info-text">підтримку у прийнятті ключових рішень.</p>
+                  </li>
+              </ul>
+              </article>
+            </div>
+            <div class="modal-footer">
+             <div class="footer-nav-container">
+                <h3 class="modal-footer-title">У кого вже вийшло</h3>
+                <div class="nav-btns">
+                  <button
+                    id="prevBtn"
+                    class="nav-button"
+                    type="button"
+                    title="назад"
+                    aria-label="кнопка назад"
+                  >
+                    &lt;
+                  </button>
+                  <button
+                    id="nextBtn"
+                    class="nav-button"
+                    type="button"
+                    title="вперед"
+                    aria-label="кнопка вперед"
+                  >
+                    &gt;
+                  </button>
+                 </div>  
+             </div>  
+               <ul class="reviews-section__list product-slider">
+                      <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
+                                <div class="reviews__title-container">
+                                  <h5>Оленка</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text">Це - Оксана. А це - її курс з відеомейкінгу, який було створено
+                                 під час навчання “Елементи”.
+                              </p>
+                              <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                      <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/KatyaKir.jpg" alt="фото Каті">
+                                <div class="reviews__title-container">
+                                  <h5>Катя</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text">Це - Настя. А це - її курс з відеомейкінгу, 
+                                який було створено під час навчання “Елементи”.
+                              </p>
+                               <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                      <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
+                                <div class="reviews__title-container">
+                                  <h5>Ольга</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text">Це - Клава. А це - її курс з відеомейкінгу,
+                                 який було створено під час навчання “Елементи”.
+                              </p>
+                              <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                      <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
+                                <div class="reviews__title-container">
+                                  <h5>Наталя</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text" >Це - Олена. А це - її курс з відеомейкінгу, 
+                                який було створено під час навчання “Елементи”.
+                              </p>
+                              <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                      <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
+                                <div class="reviews__title-container">
+                                  <h5>Оксана</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text">Це - Ольга. А це - її курс з відеомейкінгу,
+                                 який було створено під час навчання “Елементи”.
+                              </p>
+                              <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                      <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
+                                <div class="reviews__title-container">
+                                  <h5>Ірина</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text">Це - Света. А це - її курс з відеомейкінгу,
+                                 який було створено під час навчання “Елементи”.
+                              </p>
+                              <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                       <li class="reviews-section__item">
+                          <article class="reviews-section__card product-slider-card">
+                              <div class="reviews-section__card-title">
+                                <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
+                                <div class="reviews__title-container">
+                                  <h5>Ірина</h5>
+                                  <p>Курс “Елементи”</p>
+                                </div>
+                              </div>
+                              <p class="reviews-text">Це - Таня. А це - її курс з відеомейкінгу,
+                                 який було створено під час навчання “Елементи”.
+                              </p>
+                              <div class="reviews-section__videocard-container">
+                                  <div class="reviews-section__videocard-playbutton" id="playButton">
+                                      <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
+                                      <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
+                                  </div>
+                                  <video class="reviews-video" id="myVideo" preload="metadata">
+                                      <source src="video.mp4" type="video/mp4">
+                                  </video>
+                              </div>
+                          </article>
+                      </li>
+                  </ul>
+            </div>
+      </div>
+    </div>
+
+    <div class="form-wrapper hidden" id="form-wrapper">
+      <div class="form-modal">
+          <div class="form-img-container">
+              <img class="form-img" src="./images/form-img.png" alt="фото Христини">
+              <p class="img-container__text">
+                  На моєму шляху мені не вистачало мене<br> теперішньої, 
+                  яка взяла б за руку та показала<br> як працює бізнес, та коли він вдається
+              </p>
+              <p class="img-container__subtext">Христина Дідух / <span class="img__subtext-accent">Founder & CEO</span></p>
+          </div>
+          <div class="consultation-form-container">
+              <h2 class="form-title">Замовити консультацію</h2>
+              <p class="form-subtitle">Заповніть форму і ми з вами зв'яжемось</p>
+          
+              <form class="consultation-form" id="consultation-form">
+                  <div class="form-row">
+                     <div class="label-input">
+                       <label for="first-name">Ім'я</label>
+                       <input type="text" id="first-name" name="first-name" placeholder="mail@simmmple.com" required>
+                     </div>
+                      <div class="label-input">
+                       <label for="last-name">Прізвище</label>
+                       <input type="text" id="last-name" name="last-name" placeholder="Min. 8 characters" required>
+                      </div>
+                  </div>
+          
+                 <div class="form-column">
+                   <div class="label-input">
+                      <label for="phone">Номер телефону</label>
+                      <input type="tel" id="phone" name="phone" placeholder="38 (0__) ___ __ __" required>
+                   </div>
+          
+                  <div class="label-input">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="mail@simmmple.com" required>
+                  </div>
+                 </div>
+          
+                  <h3 class="product-selection-title">Оберіть продукт</h3>
+                  <div class="product-options">
+                      <label>
+                          <input type="radio" name="product" value="elements" required>
+                          Навчальна програма "Елементи"
+                      </label>
+                      <label>
+                          <input type="radio" name="product" value="business-consulting">
+                          Бізнес-консалтинг
+                      </label>
+                      <label>
+                          <input type="radio" name="product" value="product-launch">
+                          Продюсування та запуск інфопродуктів
+                      </label>
+                      <label>
+                          <input type="radio" name="product" value="personal-work">
+                          Особиста робота з Христиною
+                      </label>
+                  </div>
+          
+                  <button type="submit" class="submit-button">Замовити консультацію
+                      <img src="./icons/black-arrow.svg" alt="icon" class="submit-button-img">
+                  </button>
+              </form>
+          </div>
+          <button class="close-form" type="button">&times;</button>
+      </div>
+    </div>
+    <script src="./scripts/formToggleModal.js"></script>
+    <script src="./scripts/modalSlider.js"></script>
+  </body>
+</html>
