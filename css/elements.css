@@ -2524,7 +2524,7 @@ display: flex;
     height: 900px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-    background-color: brown;
+    background: linear-gradient(to bottom, #942307, #650606);
     padding-block-start: 80px;
 }
 
