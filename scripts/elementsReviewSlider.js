@@ -34,7 +34,7 @@ function showNextElement() {
     }
 }
 
-prevButton.addEventListener('click', showPrevElement);
-nextButton.addEventListener('click', showNextElement);
+prevButton.addEventListener('click', showNextElement);
+nextButton.addEventListener('click', showPrevElement);
 
 updateElementsCards();
