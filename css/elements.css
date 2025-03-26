@@ -2520,28 +2520,22 @@ display: flex;
 
 .reviews-section {
     margin-bottom: 140px;
+    position: relative;
+    height: 900px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: brown;
+    padding-block-start: 80px;
 }
 
 .reviews-section__title {
     font-family: var(--font-family-primary);
     font-size: 60px;
     font-weight: 500;
-    color: var(--color-dark);
-    margin-bottom: 40px;
-    margin-left: 60px;
-}
-
-.reviews-section__title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/arraow-after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    right: -565px;
+    color: var(--color-light);
+    max-width: 489px;
+    margin-block-end: 82px;
+    margin-inline-start: 60px;
 }
 
 .reviews-section__list {
@@ -2550,13 +2544,13 @@ display: flex;
     overflow: hidden;
     flex-wrap: nowrap;
     margin-block-end: 40px;
-    margin-inline-start: 60px;
+    margin-inline-start: 660px;
 }
 
 .reviews-section__card {
     display: flex;
-    height: 388px;
-    width: 480px;
+    height: 384px;
+    width: 316px;
     flex-direction: column;
     flex-shrink: 0;
     background-color: var(--color-light);
@@ -2570,27 +2564,16 @@ display: flex;
   gap: 8px;
   margin-block-end: 20px;
 }
-
-.reviews-section__card-title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/rev-sect.svg);
-    width: 37px;
-    height: 29px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    top: 4px;
-    right: -184px;
-} 
+ 
 .reviews-image {
-    height: 60px;
-    width: 60px;
+    height: 54px;
+    width: 54px;
     border-radius: 50%;
 }
+
 .reviews__title-container>h5 {
 font-family: var(--font-family-secondary);
-font-size: 20px;
+font-size: 18px;
 font-weight: 600;
 color: var(--color-dark);
 margin-bottom: 4px;
@@ -2612,12 +2595,53 @@ margin-bottom: 4px;
 }
 
 .reviews-section__card.is-active {
-background:linear-gradient(101.29deg, #FFEAFD 1.08%, #D3E1FF 100%);
+   background: transparent;
+   border: none;
+   height: 296px;
+   max-width: 454px;
+   position: absolute;
+   top: 300px;
+   left: 60px;
+}
+
+.reviews-section__card.is-active .reviews-image {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.reviews-section__card.is-active .reviews__title-container>h5 {
+    font-size: 28px;
+    color: var(--color-light);
+}
+
+.reviews-section__card.is-active .reviews__title-container>p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reviews-section__card.is-active .reviews-text {
+    font-size: 20px;
+    margin-block-end: 162px;
+    height: 296px;
+    min-width: 354px;
+    color: var(--color-light);
+    line-height: 1.4;
+}
+
+.reviews-section__card.is-active .reviews-section__videocard-container {
+    display: block;
+    position: absolute;
+    top: 480px;
+}
+
+.reviews-section__card.is-active .reviews-section__videocard-buttontext {
+    font-size: 18px;
+    color: var(--color-light);
 }
 
 .reviews-section__videocard-container {
-    position: absolute;
-    top: 320px;
+    display: none;
 }
 
 .reviews-section__videocard-playbutton {
@@ -2625,6 +2649,7 @@ background:linear-gradient(101.29deg, #FFEAFD 1.08%, #D3E1FF 100%);
     align-items: center;
     gap: 10px;
 }
+
 .reviews-section__videocard-buttontext {
     font-family: var(--font-family-secondary);
     font-size: 18px;
@@ -2650,33 +2675,34 @@ background:linear-gradient(101.29deg, #FFEAFD 1.08%, #D3E1FF 100%);
     display: flex;
     align-items: center;
     gap: 13px;
-    margin-left: 60px;
+    margin-inline-start: 660px;
 }
 .nav-button {
     background: transparent;
     height: 60px;
     width: 60px;
-    border: 1px solid rgba(85, 107, 167, 0.25); 
+    border: 1px solid rgba(255, 255, 255, 0.5); 
     border-radius: 50%;
     cursor: pointer; 
     font-size: 24px;
+    color: var(--color-light);
 }
 
 .elements-counter {
     font-family: var(--font-family-primary);
-    font-size: 38px;
+    font-size: 40px;
     font-weight: 500;
-    color: var(--color-dark);
+    color: var(--color-light);
     margin-right: 60px;
 }
 
 .nav-btns::after {
     content: ''; 
     position: absolute;
-    left: 220px;
-    right: 185px; 
+    left: 815px;
+    right: 125px; 
     height: 1px; 
-    background-color: rgba(85, 107, 167, 0.25); 
+    background-color: rgba(255, 255, 255, 0.5); 
 }
 
 .nav-button.is-active {
