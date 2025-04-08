@@ -2,6 +2,18 @@ let currentIndex = 1;
 const cards = document.querySelectorAll('.bonus-slider-card');
 const dots = document.querySelectorAll('.bonus-slider-dot');
 
+function getTransformValue(offset) {
+    
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth < 480) {
+       
+        return `${offset * 35}%`;
+    }
+    
+    return `${offset * 90}%`;
+}
+
 function updateBonusCards() {
     cards.forEach((card, index) => {
         if (index === currentIndex) {
@@ -11,13 +23,15 @@ function updateBonusCards() {
             card.classList.add('active'); 
             
         } else if (index === (currentIndex + 1) % cards.length) {
-            card.style.transform = 'translateX(-90%)'; 
+            
+            card.style.transform = `translateX(${getTransformValue(-1)})`; 
             card.style.zIndex = '1'; 
             card.style.top = '35px'; 
             card.classList.remove('active'); 
             
         } else {
-            card.style.transform = 'translateX(90%)'; 
+           
+            card.style.transform = `translateX(${getTransformValue(1)})`; 
             card.style.zIndex = '1'; 
             card.style.top = '35px'; 
             card.classList.remove('active'); 
@@ -45,5 +59,6 @@ document.querySelector('.btn-prev').addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + cards.length) % cards.length; 
     updateBonusCards(); 
 });
+
 
 updateBonusCards();
