@@ -10,13 +10,12 @@
 <body>
    <div class="container">
     <header class="header">
-        <div class="container">
             <div class="header__container">
                 <a 
-                class="header__nav-logo" 
-                href="./index.html"
-                aria-label="Головна"
-                title="Головна">
+                  class="header__nav-logo" 
+                  href="./index.html"
+                  aria-label="Головна"
+                  title="Головна">
                   <img 
                   class="logo__image"
                   src="./images/logo horisontal.png" 
@@ -24,7 +23,7 @@
                   width="134"
                   height="45" 
                  />  
-              </a>
+                </a>
              <div class="mobile-hidden">
                 <nav class="header__nav--left">
                     <a class="header__nav--left-link" href="./index.html">Головна</a>
@@ -101,13 +100,12 @@
                         <img class="header__nav--button-arrow-down-en" src="./icons/arrow-down.svg" alt="arrow-down"/>
                     </a>
                  </div>
-                  <a 
-                  href="#el-hero-section"
+                  <button 
                   class="header__nav--button open-form-button" 
                   aria-label="Перейти"
                   type="button">Мені треба
                     <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
-                   </a>
+                   </button>
              </nav>
              </div>
     
@@ -139,13 +137,14 @@
               </ul>
     
              <div class="visible-mobile">
-                <button 
-                  class="product-section__article-btn header__mobile-button" 
+                <a
+                  href="#el-hero-section" 
+                  class="product-section__article-btn header__mobile-button open-form-button" 
                   type="button"
                   title="Перейти"
                   aria-label="Перейти">
                 <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
-                </button>
+                </a>
                 <button 
                   class="header__burger-button"
                   type="button"
@@ -156,10 +155,144 @@
                 </button>
              </div>
             </div>
-         </div>
         </header>   
     
-        <div class="mobile__menu"></div>
+        <div class="mobile__menu">
+            <div class="burger-title">
+                <a 
+                class="mobile-logo" 
+                href="/"
+                aria-label="Головна"
+                title="Головна">
+                <img 
+                class="logo__image"
+                src="./images/logo horisontal.png" 
+                alt="Лого Елементи"
+                width="134"
+                height="45" 
+               />  
+              </a>
+              <button class="close-menu" type="button">&times;</button>
+            </div>
+            <div class="mobile-product">
+                <a 
+                class="mobile-product-link"
+                href="/"
+                title="Головна"
+                aria-label="Головна">Головна
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a>  
+                <div class="product-link-title">
+                 <p class="link-title">Продукти:</p> 
+                 <a 
+                class="mobile-product-link"
+                 href="./elements.html"
+                 title="Навчальна програма 'Елементи'"
+                 aria-label="Навчальна програма 'Елементи'">Навчальна програма "Елементи"
+                  <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                 </a> 
+                </div>
+                <a 
+                 class="mobile-product-link"
+                 href="./product-modal-1.html"
+                 title="Бізнес-консалтинг"
+                 aria-label="Бізнес-консалтинг">Бізнес-консалтинг
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a>
+                <a 
+                 class="mobile-product-link"
+                 href="./product-modal-2.html"
+                 title="Продюсування та запуск інфопродуктів"
+                 aria-label="Продюсування та запуск інфопродуктів">Продюсування та запуск інфопродуктів
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a> 
+                <a 
+                 class="mobile-product-link"
+                 href="./product-modal-3.html"
+                 title="Особиста робота з Христиною"
+                 aria-label="Особиста робота з Христиною">Особиста робота з Христиною
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a> 
+            </div>
+            <div class="product-action-container">
+                <a 
+                  href="#el-hero-section"
+                  class="header__nav--button mobile-button open-form-button" 
+                  aria-label="Перейти"
+                  type="button">Мені треба
+                    <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a>
+                <div class="mobile-action-btn">
+                    <span class="action-text">Обирай мову</span>
+                    <a
+                    href="./index.html" 
+                    class="mobile-button-ua" 
+                    id="ua-mob"
+                    type="button" 
+                    aria-label="Змінити мову">
+                        <img class="header__nav--button-img" src="./icons/ua-flag.png" alt="Прапор України"/>
+                        UA
+                    </a>
+                    <a 
+                    href="./home-en.html"
+                    class="mobile-button-en mobile-btn" 
+                    id="en-mob"
+                    type="button" 
+                    aria-label="Змінити мову">
+                        <img class="header__nav--button-img" src="./icons/flag-usa.svg" alt="USA flag"/>
+                        En
+                    </a>
+                 </div>
+            </div>
+            <div class="mobile-soc1al">
+                <a 
+                  class="mobile-social" 
+                  href="https://www.instagram.com/khrystyna.didukh/" 
+                  target="_blank" 
+                  rel="noopener" 
+                  aria-label="Instagram" 
+                  title="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                       clip-rule="evenodd" 
+                       d="M16 3.62695H8C5.23858 3.62695 3 5.86553 3 8.62695V16.627C3 19.3884 5.23858 
+                       21.627 8 21.627H16C18.7614 21.627 21 19.3884 21 16.627V8.62695C21 5.86553 18.7614 
+                       3.62695 16 3.62695ZM19.25 16.627C19.2445 18.4196 17.7926 19.8715 16 19.877H8C6.20735 
+                       19.8715 4.75549 18.4196 4.75 16.627V8.62695C4.75549 6.8343 6.20735 5.38244 8 
+                       5.37695H16C17.7926 5.38244 19.2445 6.8343 19.25 8.62695V16.627ZM16.75 8.87695C17.3023 
+                       8.87695 17.75 8.42923 17.75 7.87695C17.75 7.32467 17.3023 6.87695 16.75 6.87695C16.1977
+                       6.87695 15.75 7.32467 15.75 7.87695C15.75 8.42923 16.1977 8.87695 16.75 8.87695ZM12 
+                       8.12695C9.51472 8.12695 7.5 10.1417 7.5 12.627C7.5 15.1123 9.51472 17.127 12 17.127C14.4853 
+                       17.127 16.5 15.1123 16.5 12.627C16.5027 11.4327 16.0294 10.2865 15.1849 9.44203C14.3404 
+                       8.59754 13.1943 8.12429 12 8.12695ZM9.25 12.627C9.25 14.1458 10.4812 15.377 12 15.377C13.5188 
+                       15.377 14.75 14.1458 14.75 12.627C14.75 11.1082 13.5188 9.87695 12 9.87695C10.4812 9.87695 
+                       9.25 11.1082 9.25 12.627Z" 
+                       fill="white" 
+                       fill-opacity="0.7"/>
+                      </svg> 
+                </a>
+                <a 
+                  class="mobile-social" 
+                  href="https://www.linkedin.com/in/khrystynadidukh358/" 
+                  target="_blank" 
+                  rel="noopener" 
+                  aria-label="Linkedin" 
+                  title="Linkedin"> 
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_474_9142)">
+                          <path d="M19.2238 19.2291V19.2284H19.2284V12.4576C19.2284 9.14529 18.5153 6.59375 14.643 6.59375C12.7815 6.59375 11.5323 7.61529 11.0223 8.58375H10.9684V6.90298H7.29688V19.2284H11.12V13.1253C11.12 11.5184 11.4246 9.96452 13.4146 9.96452C15.3753 9.96452 15.4046 11.7984 15.4046 13.2284V19.2291H19.2238Z" fill="white"/>
+                          <path d="M1.07812 6.90625H4.90582V19.2316H1.07812V6.90625Z" fill="white"/>
+                          <path d="M2.98645 0.769531C1.76261 0.769531 0.769531 1.76261 0.769531 2.98645C0.769531 4.2103 1.76261 5.22415 2.98645 5.22415C4.2103 5.22415 5.20338 4.2103 5.20338 2.98645C5.20261 1.76261 4.20953 0.769531 2.98645 0.769531V0.769531Z" fill="white"/>
+                      </g>
+                      <defs>
+                          <clipPath id="clip0_474_9142">
+                              <rect width="20" height="20" fill="white"/>
+                          </clipPath>
+                      </defs>
+                  </svg> 
+                </a>
+            </div>
+        </div>
     <main>
         <section class="el-hero-section" id="el-hero-section">
             <div class="hero-overlay"></div>
@@ -231,7 +364,7 @@
                     <article class="card-advantages-content extra-content">
                         <img src="./images/el-hero-card-img.png" class="advantages-content-img" alt="image">
                     </article>
-                    <article class="card-advantages-content">
+                    <article class="card-advantages-content mob-spec">
                         <img src="./icons/el-hero-icon_3.svg" class="advantages-img advantages-spec" alt="icon">
                         <h4 class="card-advantages-title">Інструменти та підтримка</h4>
                         <p class="card-advantages-text">спринт-бот, робота з емоційним,
@@ -284,7 +417,7 @@
                             <div class="aboutcard-overlay card-2"></div> 
                             <div class="aboutcard-content">
                                 <img src="./images/runa-2.png" alt="Руна" class="rune-image-2">
-                                <p class="aboutcard-text">Організувала міжнародну конференцію 
+                                <p class="aboutcard-text about-text-2">Організувала міжнародну конференцію 
                                 be brave to bloom для підприємців, стартапів, ділових людей,
                                 креативних індустрій та бізнесу.</p>
                             </div>
@@ -314,7 +447,7 @@
                             </video>
                             <div class="aboutcard-overlay card-4"></div> 
                             <div class="aboutcard-content">
-                                <img src="./images/runa-4.png" alt="Руна" class="rune-image">
+                                <img src="./images/runa-4.png" alt="Руна" class="rune-image rune-mob">
                                 <p class="aboutcard-text">Сьогодні я можу поділитися з вами тим,
                                  що працює: перевіреними технологіями, системними підходами та рішеннями,
                                  які вже допомогли моїм клієнтам побудувати бізнес, що приносить не лише дохід, 
@@ -333,7 +466,7 @@
                                 <p class="spec-rowtext">Як створити продукт не про модно, а про себе</p>
                             </li>
                             <li class="aboutcard-spec-row">
-                                <img src="./images/specrow-img.png" alt="icon" class="spec-row-img">
+                                <img src="./images/specrow-img.png" alt="icon" class="spec-row-img mob-row">
                                 <p class="spec-rowtext">Як вийти із тіні та проявитись</p>
                             </li>
                             <li class="aboutcard-spec-row">
@@ -374,7 +507,7 @@
                 </div>
                <a 
                  href="#tarif-section"
-                 class="personality-section__button open-form-button" 
+                 class="personality-section__button" 
                  aria-label="Перейти" type="button">Обрати Тариф
                 <img class="personality-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
                </a>
@@ -382,7 +515,6 @@
         </section>
         <section class="bonus-section" id="bonus-section">
             <h2 class="el-bonus-section-title">Використай максимум від Елементів</h2>
-            <div class="container">
                 <ul class="bonus-section__list">
                    <li class="bonus-section__item">
                        <article class="bonus-section__card">
@@ -531,7 +663,95 @@
                    </article>
                  </li>
                 </ul>
-               </div>
+                <ul class="bonus-visible-mobile">
+                   <li class="bonus-visible-item bonus-item-1">
+                    <div class="bonus-section__card-btn">
+                        <a 
+                            href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite" 
+                            class="rounded-button" 
+                            target="_blank" 
+                            rel="noopener" 
+                            aria-label="Перейти">
+                            <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
+                        </a>
+                    </div>
+                    <h3 class="bonus-section__hover-title">Отримай безкоштовні матеріали</h3>
+                    <h5 class="bonus-section__hover-subtitle">Забирайте корисні матеріали, які допоможуть вам:</h5>
+                    <p class="bonus-section__hover-text">визначити нішу</p>
+                    <p class="bonus-section__hover-text">покращити продажі</p>
+                    <p class="bonus-section__hover-text">масштабувати бізнес</p>
+                    <p class="bonus-section__hover-text">Зробіть перший крок до впевненого ведення бізнесу та фінансового зростання.
+                         Почніть діяти вже зараз!</p>
+                    <div class="bonus-section__hover-btn">
+                        <a 
+                            href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite" 
+                            class="bonus-link" 
+                            target="_blank" 
+                            rel="noopener" 
+                            aria-label="Перейти">Залишити Заявку 🔥
+                        </a>
+                    </div>
+                   </li>
+                   <li class="bonus-visible-item bonus-item-2">
+                    <div class="bonus-section__card-btn">
+                        <a 
+                        href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite" 
+                        class="rounded-button" 
+                        target="_blank" 
+                        rel="noopener" 
+                        aria-label="Перейти"
+                        >
+                        <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
+                       </a>  
+                    </div>
+                    <h3 class="bonus-section__hover-title">Взламай<br> свою дофамінову<br> систему</h3>
+                    <h5 class="bonus-section__hover-subtitle">Поєднайте задоволення від власних результатів
+                         із використанням сучасних технологій!</h5>
+                    <p class="bonus-section__hover-text">переходьте у дофамін-бот</p>
+                    <p class="bonus-section__hover-text">ставте конкретні цілі</p>
+                    <p class="bonus-section__hover-text"> отримуйте заряд мотивації та винагороду за прогрес</p>
+                        <div class="bonus-section__hover-btn">
+                            <a 
+                            href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite" 
+                            class="bonus-link" 
+                            target="_blank" 
+                            rel="noopener" 
+                            aria-label="Перейти"
+                            >Залишити Заявку 🔥
+                           </a>  
+                       </div> 
+                   </li>
+                   <li class="bonus-visible-item bonus-item-3">
+                    <div class="bonus-section__card-btn">
+                        <a 
+                        href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite" 
+                        class="rounded-button" 
+                        target="_blank" 
+                        rel="noopener" 
+                        aria-label="Перейти"
+                        >
+                        <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
+                       </a>  
+                       </div>
+                    <h3 class="bonus-section__hover-title hover-title-3">Почни працювати<br> по спринтах<br> вже зараз!</h3>
+                    <h5 class="bonus-section__hover-subtitle">Досягайте бізнес-цілі легко! Як? Працюючи по спринтах!
+                        Допоможе наш спринт-бот</h5>
+                    <p class="bonus-section__hover-text">Поставте ціль на тиждень</p>
+                    <p class="bonus-section__hover-text">Оберіть ключові показники досягнення цілі</p>
+                    <p class="bonus-section__hover-text">В кінці тижня бот запитає вас про результат</p>
+                    <p class="bonus-section__hover-text">Регулярна звітність на 70% збільшує вірогідність досягнення цілі</p>
+                        <div class="bonus-section__hover-btn">
+                            <a 
+                            href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite" 
+                            class="bonus-link" 
+                            target="_blank" 
+                            rel="noopener" 
+                            aria-label="Перейти"
+                            >Залишити Заявку 🔥
+                           </a>
+                       </div>
+                   </li>
+                </ul>
         </section>
         <section class="subscription-section" id="subscription-section">
             <p class="subscription-section-accent">
@@ -577,12 +797,11 @@
                         aria-label="Оформити">Оформити Підписку
                         <img class="left-subscription--arrow" src="./icons/black-arrow.svg" alt="arrow" />
                         </a>
-                        <a 
-                        href="#el-hero-section"
-                        class="left-consultation--button open-form-button" 
-                        aria-label="Перейти"
-                        type="button">Проконсультуватися
-                         </a>
+                        <button 
+                         class="left-consultation--button open-form-button" 
+                         aria-label="Перейти"
+                         type="button">Проконсультуватися
+                         </button>
                     </div>
                 </div>
                 <div class="subscription-card-right">
@@ -649,7 +868,7 @@
                 </h2>
                 <a 
                 href="#tarif-section"
-                class="personality-section__button open-form-button" 
+                class="personality-section__button personality-mobile-hide" 
                 aria-label="Перейти" type="button">Обрати Тариф
                <img class="personality-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
               </a>
@@ -687,6 +906,12 @@
                     </p>
                 </li>
              </ul>
+             <a 
+                href="#tarif-section"
+                class="personality-section__button personality-visible-mobile open-form-button" 
+                aria-label="Перейти" type="button">Обрати Тариф
+               <img class="personality-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
+              </a>
         </section>
         <section class="track-section" id="track-section">
             <h2 class="tract-title">
@@ -710,16 +935,15 @@
                                   title="Дізнатись більше"
                                   aria-label="Дізнатись більше">Дізнатись більше
                                   </button>
-                                  <a 
-                                  href="#el-hero-section"
+                                  <button 
                                   class="track-section__button open-form-button" 
                                   aria-label="Перейти"
                                   title="Перейти"
                                   type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                  </a>
+                                  </button>
                                 </div>
-                                <div class="track-card-circle"></div>
+                                <div class="track-card-circle track-circle-1"></div>
                                 <h3 class="track-title-extra title-extra-1">
                                     Ваш результат:
                                 </h3>
@@ -750,19 +974,19 @@
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">02</span>
+                                            <span class="left-circle">03</span>
                                             <span class="left-extra-text">Готові інструменти для тестування 
                                              бізнес-моделі та пошуку першого клієнта.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">03</span>
+                                            <span class="left-circle">05</span>
                                             <span class="left-extra-text">Маркетинг, що працює – зрозумієш,
                                               як просувати себе та свій продукт.
                                             </span> 
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">04</span>
+                                            <span class="left-circle">07</span>
                                             <span class="left-extra-text">Перші продажі – дізнаєшся, 
                                              як продавати навіть <br>без досвіду.
                                             </span> 
@@ -770,19 +994,19 @@
                                     </ul>
                                     <ul class="extra-left-list">
                                         <li class="extra-left-item">
-                                            <span class="left-circle">05</span>
+                                            <span class="left-circle">02</span>
                                             <span class="left-extra-text">.Доступ до всіх 7 блоків програми + 
                                              персональний маршрут навчання.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">06</span>
+                                            <span class="left-circle">04</span>
                                             <span class="left-extra-text">Гнучкість навчання – самостійно, 
                                              в групі чи з індивідуальним супроводом.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">07</span>
+                                            <span class="left-circle">06</span>
                                             <span class="left-extra-text"> Мотивація та підтримка – ти 
                                              не будеш один(-а) на цьому шляху!
                                             </span> 
@@ -802,14 +1026,13 @@
                                     title="Дізнатись більше"
                                     aria-label="Дізнатись більше">Повернутися назад
                                     </button>
-                                    <a 
-                                     href="#el-hero-section"
+                                    <button 
                                      class="track-section__button open-form-button" 
                                      aria-label="Перейти"
                                      title="Перейти"
                                      type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                    </a>
+                                    </button>
                                   </div>
                             </div>
                         </div>
@@ -831,14 +1054,13 @@
                                   title="Дізнатись більше"
                                   aria-label="Дізнатись більше">Дізнатись більше
                                   </button>
-                                  <a 
-                                  href="#el-hero-section"
+                                  <button 
                                   class="track-section__button open-form-button" 
                                   aria-label="Перейти"
                                   title="Перейти"
                                   type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                  </a>
+                                  </button>
                                 </div>
                                 <div class="track-card-circle circle-blue"></div>
                                 <h4 class="track-title-extra">
@@ -872,19 +1094,19 @@
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">02</span>
+                                            <span class="left-circle">03</span>
                                             <span class="left-extra-text">Оптимізація процесів – ми 
                                              структуруємо бізнес так, щоб він працював ефективніше
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">03</span>
+                                            <span class="left-circle">05</span>
                                             <span class="left-extra-text">Делегування без страху – знайдеш 
                                              та навчиш команду, якій зможеш довіряти
                                             </span> 
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">04</span>
+                                            <span class="left-circle">07</span>
                                             <span class="left-extra-text">Маркетинг, що дає результат – 
                                              освоїш ефективні методи просування.
                                             </span> 
@@ -892,19 +1114,19 @@
                                     </ul>
                                     <ul class="extra-left-list">
                                         <li class="extra-left-item">
-                                            <span class="left-circle">05</span>
+                                            <span class="left-circle">02</span>
                                             <span class="left-extra-text">Система продажів – CRM, скрипти, 
                                               воронки та upsell, що працюють на автоматі.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">06</span>
+                                            <span class="left-circle">04</span>
                                             <span class="left-extra-text">Чіткий фінансовий контроль – 
                                               навчишся бюджетувати та прогнозувати прибутки.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">07</span>
+                                            <span class="left-circle">06</span>
                                             <span class="left-extra-text">Персональний маршрут навчання – 
                                              доступ до всіх 7 блоків програми з адаптацією під твій бізнес.
                                             </span> 
@@ -924,14 +1146,13 @@
                                     title="Дізнатись більше"
                                     aria-label="Дізнатись більше">Повернутися назад
                                     </button>
-                                    <a 
-                                     href="#el-hero-section"
+                                    <button 
                                      class="track-section__button open-form-button" 
                                      aria-label="Перейти"
                                      title="Перейти"
                                      type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                    </a>
+                                    </button>
                                   </div>
                             </div>
                         </div>
@@ -953,14 +1174,13 @@
                                   title="Дізнатись більше"
                                   aria-label="Дізнатись більше">Дізнатись більше
                                   </button>
-                                  <a 
-                                   href="#el-hero-section"
+                                  <button 
                                    class="track-section__button open-form-button" 
                                    aria-label="Перейти"
                                    title="Перейти"
                                    type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                  </a>
+                                  </button>
                                 </div>
                                 <div class="track-card-circle circle-green"></div>
                                 <h4 class="track-title-extra">
@@ -994,19 +1214,19 @@
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">02</span>
+                                            <span class="left-circle">03</span>
                                             <span class="left-extra-text">Автоматизація продажів – CRM, скрипти, воронки та точки дотику,
                                              що приводять клієнтів до покупки.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">03</span>
+                                            <span class="left-circle">05</span>
                                             <span class="left-extra-text">Оптимізація роботи команди – 
                                              ми побудуємо оргструктуру, делегуємо завдання та впровадимо контрольні системи.
                                             </span> 
                                         </li>
-                                        <li class="extra-left-item">
-                                            <span class="left-circle">04</span>
+                                        <li class="extra-left-item hiden-item">
+                                            <span class="left-circle">07</span>
                                             <span class="left-extra-text">.Маркетинг, що працює – дізнаєшся, 
                                              як прогрівати аудиторію та збільшити конверсію.
                                             </span> 
@@ -1014,24 +1234,24 @@
                                     </ul>
                                     <ul class="extra-left-list">
                                         <li class="extra-left-item">
-                                            <span class="left-circle">05</span>
+                                            <span class="left-circle">02</span>
                                             <span class="left-extra-text">Готові стратегії масштабування – навчишся 
                                              вирішувати касові розриви та готувати бізнес до зростання.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">06</span>
+                                            <span class="left-circle">04</span>
                                             <span class="left-extra-text">Персональний маршрут навчання – доступ 
                                              до всіх 7 блоків програми з адаптацією під твої задачі.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">07</span>
+                                            <span class="left-circle">06</span>
                                             <span class="left-extra-text">.Групова або індивідуальна підтримка – обери
                                               формат, що найбільше підходить саме тобі
                                             </span> 
                                         </li>
-                                        <li class="extra-left-item">
+                                        <li class="extra-left-item hiden-item">
                                             <span class="left-circle">08</span>
                                             <span class="left-extra-text"> Разом зробимо твій бізнес 
                                              прибутковим.
@@ -1046,14 +1266,13 @@
                                     title="Дізнатись більше"
                                     aria-label="Дізнатись більше">Повернутися назад
                                     </button>
-                                    <a 
-                                      href="#el-hero-section"
+                                    <button 
                                       class="track-section__button open-form-button" 
                                       aria-label="Перейти"
                                       title="Перейти"
                                       type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1075,14 +1294,13 @@
                                   title="Дізнатись більше"
                                   aria-label="Дізнатись більше">Дізнатись більше
                                   </button>
-                                  <a 
-                                  href="#el-hero-section"
+                                  <button 
                                   class="track-section__button open-form-button" 
                                   aria-label="Перейти"
                                   title="Перейти"
                                   type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                  </a>
+                                  </button>
                                 </div>
                                 <div class="track-card-circle circle-dark"></div>
                                 <h4 class="track-title-extra">
@@ -1116,19 +1334,19 @@
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">02</span>
+                                            <span class="left-circle">03</span>
                                             <span class="left-extra-text">Пошук нових джерел доходу – інвестиції
                                              та стратегічні партнерства для росту бізнесу
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">03</span>
+                                            <span class="left-circle">05</span>
                                             <span class="left-extra-text">Захист бізнесу від ризиків – юридичний,
                                               інформаційний та бухгалтерський захист твоїх активів.
                                             </span> 
                                         </li>
-                                        <li class="extra-left-item">
-                                            <span class="left-circle">04</span>
+                                        <li class="extra-left-item hiden-item">
+                                            <span class="left-circle">7</span>
                                             <span class="left-extra-text">Розвиток особистого бренду – навчишся
                                              просувати себе та свою компанію на ринку.
                                             </span> 
@@ -1136,24 +1354,24 @@
                                     </ul>
                                     <ul class="extra-left-list">
                                         <li class="extra-left-item">
-                                            <span class="left-circle">05</span>
+                                            <span class="left-circle">02</span>
                                             <span class="left-extra-text">Створення стратегічних партнерств – знайдеш 
                                             надійних партнерів для бізнесу та інвестицій.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">06</span>
+                                            <span class="left-circle">04</span>
                                             <span class="left-extra-text">Інвестиційні стратегії – дізнаєшся,
                                              як зробити твої інвестиції вигідними та безпечними.
                                             </span>
                                         </li>
                                         <li class="extra-left-item">
-                                            <span class="left-circle">07</span>
+                                            <span class="left-circle">06</span>
                                             <span class="left-extra-text">Індивідуальна або групова підтримка – вибір
                                              між персоналізованими сесіями та підтримкою спільноти для кращих результатів.
                                             </span> 
                                         </li>
-                                        <li class="extra-left-item">
+                                        <li class="extra-left-item hiden-item">
                                             <span class="left-circle">08</span>
                                             <span class="left-extra-text">Lorem ipsum dolor sit amet,
                                              consectetur adipiscing elit, sed do eiusmod tempor. 
@@ -1169,14 +1387,13 @@
                                     title="Дізнатись більше"
                                     aria-label="Дізнатись більше">Повернутися назад
                                     </button>
-                                    <a 
-                                      href="#el-hero-section"
+                                    <button 
                                       class="track-section__button open-form-button" 
                                       aria-label="Перейти"
                                       title="Перейти"
                                       type="button">Мені треба
                                       <img class="track-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1299,8 +1516,10 @@
             <ul class="course-list">
                 <li class="course-list-item">
                     <div class="course-content">
+                        <div class="course-title-container">
                         <img src="./icons/busines-consulting.svg" alt="icon" class="course-icon">
                         <h3 class="course-content-title">#1 Блок “Особистість”</h3>
+                        </div>
                         <ul class="course-content-list">
                             <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="courset-item-icon">
@@ -1329,8 +1548,10 @@
                 </li>
                 <li class="course-list-item">
                     <div class="course-content">
+                        <div class="course-title-container">
                         <img src="./icons/aboutcourse-2.svg" alt="icon" class="course-icon">
                         <h3 class="course-content-title">#2 Блок “Продукт”</h3>
+                        </div>
                         <ul class="course-content-list">
                             <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="course-item-icon">
@@ -1359,9 +1580,11 @@
                 </li>
                 <li class="course-list-item">
                   <div class="course-content">
+                      <div class="course-title-container">
                       <img src="./icons/aboutcourse-3.svg" alt="icon" class="course-icon">
                       <h3 class="course-content-title">#3 Блок “Маркетинг”
                       </h3>
+                      </div>
                       <ul class="course-content-list">
                           <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="course-item-icon">
@@ -1390,9 +1613,11 @@
                 </li>
                 <li class="course-list-item">
                     <div class="course-content">
-                        <img src="./icons/personal-work.svg" alt="icon" class="course-icon">
-                        <h3 class="course-content-title">#4 Блок “Продажі”
-                        </h3>
+                        <div class="course-title-container">
+                            <img src="./icons/personal-work.svg" alt="icon" class="course-icon">
+                            <h3 class="course-content-title">#4 Блок “Продажі”
+                            </h3> 
+                        </div>
                         <ul class="course-content-list">
                             <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="course-item-icon">
@@ -1421,9 +1646,11 @@
                 </li>
                 <li class="course-list-item">
                     <div class="course-content">
+                        <div class="course-title-container">
                         <img src="./icons/aboutcourse-5.svg" alt="icon" class="course-icon">
                         <h3 class="course-content-title">#5 Блок “Команда”
                         </h3>
+                        </div>
                         <ul class="course-content-list">
                             <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="course-item-icon">
@@ -1452,8 +1679,10 @@
                 </li>
                 <li class="course-list-item">
                     <div class="course-content">
+                        <div class="course-title-container">
                         <img src="./icons/elements-course.svg" alt="icon" class="course-icon">
                         <h3 class="course-content-title">#6  Блок “Масштабування”</h3>
+                        </div>
                         <ul class="course-content-list">
                             <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="course-item-icon">
@@ -1482,8 +1711,10 @@
                 </li>
                 <li class="course-list-item">
                     <div class="course-content">
+                        <div class="course-title-container">
                         <img src="./icons/production&launch.svg" alt="icon" class="course-icon">
                         <h3 class="course-content-title">#7 Блок “Інвестиції”</h3>
+                        </div>
                         <ul class="course-content-list">
                             <li class="course-content-item">
                               <img src="./icons/right-item-icon.svg" alt="icon" class="course-item-icon">
@@ -1520,7 +1751,6 @@
             </a>
         </section>
         <section class="reviews-section" id="reviews-section">
-            <div class="container">
               <h2 class="reviews-section__title">У кого вже вийшло</h2>
                 <article class="reviews-section__card is-active" data-index="0">
                     <div class="reviews-section__card-title">
@@ -1552,7 +1782,7 @@
                 </article>
               <ul class="reviews-section__list">
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="1">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/KatyaKir.jpg" alt="фото Каті">
                             <div class="reviews__title-container">
@@ -1583,7 +1813,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="2">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1616,7 +1846,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="3">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1646,7 +1876,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="4">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1676,7 +1906,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="5">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1706,7 +1936,7 @@
                       </article>
                   </li>
                    <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="6">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1736,7 +1966,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="7">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1766,7 +1996,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="8">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1796,7 +2026,7 @@
                       </article>
                   </li>
                   <li class="reviews-section__item">
-                      <article class="reviews-section__card">
+                      <article class="reviews-section__card" data-index="9">
                           <div class="reviews-section__card-title">
                             <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
                             <div class="reviews__title-container">
@@ -1844,7 +2074,6 @@
                       <div class="slider-line"></div>
                       <span id="elements-counter" class="elements-counter">01</span>
                   </div>
-              </div>
         </section>
         <section class="tarif-section" id="tarif-section">
             <h2 class="tarif-section-title">Готовий придбати?</h2>
@@ -1886,7 +2115,7 @@
                           type="button">Консультація
                          </a>
                          <a 
-                          href="https://example.com"
+                          href="https://secure.wayforpay.com/payment/sff37461e804c"
                           class="tarif-section__button" 
                           aria-label="Перейти"
                           title="Перейти"
@@ -1960,7 +2189,7 @@
                           type="button">Консультація
                          </a>
                          <a 
-                          href="https://example.com"
+                          href="https://secure.wayforpay.com/payment/s8b28bd51351b"
                           class="tarif-section__button" 
                           aria-label="Перейти"
                           title="Перейти"
@@ -2049,7 +2278,7 @@
                           type="button">Консультація
                          </a>
                          <a 
-                          href="https://example.com"
+                          href="https://secure.wayforpay.com/payment/sd9196f94d9ab"
                           class="tarif-section__button"
                           aria-label="Перейти"
                           title="Перейти"
@@ -2064,7 +2293,6 @@
             </div>
         </section>
         <section class="diagnostics-section" id="diagnostics-section">
-            <div class="container">
              <div class="diagnostic-section_container">
               <article class="diagnostic-section__card">
                 <!-- <video autoplay muted loop class="diagnostic-section-video">
@@ -2076,37 +2304,33 @@
                     <p class="diagnostic-section__card-text">Можливість зафіксувати найнижчу ціну на будь-який з трьох тарифів
                      Елементів за 99€. Сума, яку ви оплачуєте, мінусується з фінальної
                       вартості і дозволяє не хвилюватись щодо зростання ціни.</p>
-                    <a 
-                      href="#el-hero-section"
+                    <button 
                       class="diagnostic-section__button open-form-button" 
                       type="button"  
                       aria-label="Перейти">
                         Залишити Заявку
                         <img class="diagnostic-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow">
-                   </a>
+                   </button>
               </article>
               <article class="diagnostic-section__videocard">
                 <img src="./images/Khris_diagnostic.png" alt="" class="diagnostic-section__videocard-img">
                 <div class="dianostic-section__videocard-container">
                     <div class="dianostic-section__videocard-playbutton" id="play-button">
-                        <img src="./images/play-button.png" alt="дивитись" class="dianostic-sectgion__videocard-playicon">
+                        <img src="./images/play-button.png" alt="дивитись" class="dianostic-section__videocard-playicon">
                         <span class="dianostic-section__videocard-buttontext">Відео-візитівка</span>
                     </div>
                     <div class="modal" id="video-modal" style="display: none;">
                         <span class="close" id="close-button">&times;</span>
                         <video class="modal-video" id="modal-video" controls>
-                            <source src="./video/video-vizutivka-1.mp4" type="video/mp4">
+                            <source src="./video/video-vizutivka.MOV" type="video/mp4">
                             Ваш браузер не підтримує відео.
                         </video>
                     </div>
                 </div>
-                </div>
               </article>
              </div>
-            </div>
         </section>
         <section class="faq-section" id="faq-section">
-            <div class="container">
              <div class="faq_section__container">
                 <h2 class="faq-section__title">Поширені питання</h2>
                <div class="faq-section__details-container">
@@ -2179,11 +2403,9 @@
                 </details>
                </div>
              </div>
-            </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
             <nav class="footer__nav">
                     <a 
                     class="footer__nav-logo"
@@ -2259,7 +2481,6 @@
                      </a>
                    </div>
             </nav>
-        </div>
     </footer>
 
     <div class="form-wrapper hidden" id="form-wrapper">
@@ -2334,5 +2555,6 @@
    <script src="./scripts/trackCardSlider.js"></script>
    <script src="./scripts/bonusSlider.js"></script>
    <script src="./scripts/elementsReviewSlider.js"></script>
+   <script src="./scripts/mobileMenu.js"></script>
 </body>
 </html>
