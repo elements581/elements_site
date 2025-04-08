@@ -41,5 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
     nextButton.addEventListener('click', showNextCard);
 
     
+    window.addEventListener('resize', updateCards);
+});
+    prevButton.addEventListener('click', showPrevCard);
+    nextButton.addEventListener('click', showNextCard);
+
+    
     updateCards(); 
 });
