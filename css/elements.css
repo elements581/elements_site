@@ -1346,6 +1346,7 @@ transform: rotate(45deg);
         position: relative;
         height: 400px;
         width: 100%;
+        scrollbar-width: none;
     }  
 }
 
@@ -3571,7 +3572,7 @@ transform: rotate(45deg);
 @media screen and (max-width: 480px) {
     .bonus-slider-container {
         position: relative;
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
     } 
 }
@@ -3581,6 +3582,12 @@ transform: rotate(45deg);
     justify-content: center;
     position: relative;
     transition: transform 0.5s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .bonus-slider {
+      overflow-x: clip;
+    } 
 }
 
 .bonus-slider-card {
