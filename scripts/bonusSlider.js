@@ -8,7 +8,7 @@ function getTransformValue(offset) {
 
     if (windowWidth < 480) {
        
-        return `${offset * 35}%`;
+        return `${offset * 30}%`;
     }
     
     return `${offset * 90}%`;
