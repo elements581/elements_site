@@ -8,11 +8,15 @@ export default function initializeReviewsSlider() {
     const totalCards = cards.length;
 
     function updateCards() {
+        
+        const isMobile = window.innerWidth <= 480; 
+        const visibleCardsCount = isMobile ? 1 : 3; 
+    
         cards.forEach((card, index) => {
-            card.style.display = index >= currentIndex && index < currentIndex + 3 ? 'block' : 'none';
+           
+            card.style.display = index >= currentIndex && index < currentIndex + visibleCardsCount ? 'block' : 'none';
             card.classList.remove('is-active'); 
         });
-
         
         if (cards[currentIndex]) {
             cards[currentIndex].classList.add('is-active');
@@ -40,5 +44,5 @@ export default function initializeReviewsSlider() {
     prevButton.addEventListener('click', showPrevCard);
     nextButton.addEventListener('click', showNextCard);
 
-    updateCards();
+    window.addEventListener('resize', updateCards);
 }
