@@ -13,7 +13,7 @@
             <div class="header__container">
                 <a 
                 class="header__nav-logo" 
-                href="./"
+                href="/"
                 aria-label="Головна"
                 title="Головна">
                   <img 
@@ -26,7 +26,11 @@
               </a>
              <div class="mobile-hidden">
                 <nav class="header__nav--left">
-                    <a class="header__nav--left-link" href="./">Головна</a>
+                    <a 
+                    class="header__nav--left-link"
+                    href="/"
+                    title="Головна"
+                    aria-label="Головна">Головна</a>
                     <div class="header__products--dropdown" id="product">
                        <span class="header__nav--left-link">Продукти</span> 
                       <img class="header__nav--button-arrow-left" src="./icons/arrow-down.svg" alt="arrow-down"/> 
@@ -100,13 +104,12 @@
                         <img class="header__nav--button-arrow-down-en" src="./icons/arrow-down.svg" alt="arrow-down"/>
                     </a>
                  </div>
-                  <a 
-                  href="#hero-section"
+                  <button 
                   class="header__nav--button open-form-button" 
                   aria-label="Перейти"
                   type="button">Мені треба
                     <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
-                   </a>
+                   </button>
              </nav>
              </div>
     
@@ -138,13 +141,14 @@
               </ul>
     
              <div class="visible-mobile">
-                <button 
-                  class="product-section__article-btn header__mobile-button" 
+                <a 
+                  href="#hero-section"
+                  class="product-section__article-btn header__mobile-button open-form-button" 
                   type="button"
                   title="Перейти"
                   aria-label="Перейти">
                 <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
-                </button>
+                </a>
                 <button 
                   class="header__burger-button"
                   type="button"
@@ -158,7 +162,142 @@
          </div>
         </header>   
     
-        <div class="mobile__menu"></div>
+        <div class="mobile__menu">
+            <div class="burger-title">
+                <a 
+                class="mobile-logo" 
+                href="/"
+                aria-label="Головна"
+                title="Головна">
+                <img 
+                class="logo__image"
+                src="./images/logo horisontal.png" 
+                alt="Лого Елементи"
+                width="134"
+                height="45" 
+               />  
+              </a>
+              <button class="close-menu" type="button">&times;</button>
+            </div>
+            <div class="mobile-product">
+                <a 
+                class="mobile-product-link"
+                href="/"
+                title="Головна"
+                aria-label="Головна">Головна
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a>  
+                <div class="product-link-title">
+                 <p class="link-title">Продукти:</p> 
+                 <a 
+                class="mobile-product-link"
+                 href="./elements.html"
+                 title="Навчальна програма 'Елементи'"
+                 aria-label="Навчальна програма 'Елементи'">Навчальна програма "Елементи"
+                  <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                 </a> 
+                </div>
+                <a 
+                 class="mobile-product-link"
+                 href="./product-modal-1.html"
+                 title="Бізнес-консалтинг"
+                 aria-label="Бізнес-консалтинг">Бізнес-консалтинг
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a>
+                <a 
+                 class="mobile-product-link"
+                 href="./product-modal-2.html"
+                 title="Продюсування та запуск інфопродуктів"
+                 aria-label="Продюсування та запуск інфопродуктів">Продюсування та запуск інфопродуктів
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a> 
+                <a 
+                 class="mobile-product-link"
+                 href="./product-modal-3.html"
+                 title="Особиста робота з Христиною"
+                 aria-label="Особиста робота з Христиною">Особиста робота з Христиною
+                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a> 
+            </div>
+            <div class="product-action-container">
+                <a 
+                  href="#hero-section"
+                  class="header__nav--button mobile-button open-form-button" 
+                  aria-label="Перейти"
+                  type="button">Мені треба
+                    <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
+                </a>
+                <div class="mobile-action-btn">
+                    <span class="action-text">Обирай мову</span>
+                    <a
+                    href="./index.html" 
+                    class="mobile-button-ua" 
+                    id="ua-mob"
+                    type="button" 
+                    aria-label="Змінити мову">
+                        <img class="header__nav--button-img" src="./icons/ua-flag.png" alt="Прапор України"/>
+                        UA
+                    </a>
+                    <a 
+                    href="./home-en.html"
+                    class="mobile-button-en mobile-btn" 
+                    id="en-mob"
+                    type="button" 
+                    aria-label="Змінити мову">
+                        <img class="header__nav--button-img" src="./icons/flag-usa.svg" alt="USA flag"/>
+                        En
+                    </a>
+                 </div>
+            </div>
+            <div class="mobile-soc1al">
+                <a 
+                  class="mobile-social" 
+                  href="https://www.instagram.com/khrystyna.didukh/" 
+                  target="_blank" 
+                  rel="noopener" 
+                  aria-label="Instagram" 
+                  title="Instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                       clip-rule="evenodd" 
+                       d="M16 3.62695H8C5.23858 3.62695 3 5.86553 3 8.62695V16.627C3 19.3884 5.23858 
+                       21.627 8 21.627H16C18.7614 21.627 21 19.3884 21 16.627V8.62695C21 5.86553 18.7614 
+                       3.62695 16 3.62695ZM19.25 16.627C19.2445 18.4196 17.7926 19.8715 16 19.877H8C6.20735 
+                       19.8715 4.75549 18.4196 4.75 16.627V8.62695C4.75549 6.8343 6.20735 5.38244 8 
+                       5.37695H16C17.7926 5.38244 19.2445 6.8343 19.25 8.62695V16.627ZM16.75 8.87695C17.3023 
+                       8.87695 17.75 8.42923 17.75 7.87695C17.75 7.32467 17.3023 6.87695 16.75 6.87695C16.1977
+                       6.87695 15.75 7.32467 15.75 7.87695C15.75 8.42923 16.1977 8.87695 16.75 8.87695ZM12 
+                       8.12695C9.51472 8.12695 7.5 10.1417 7.5 12.627C7.5 15.1123 9.51472 17.127 12 17.127C14.4853 
+                       17.127 16.5 15.1123 16.5 12.627C16.5027 11.4327 16.0294 10.2865 15.1849 9.44203C14.3404 
+                       8.59754 13.1943 8.12429 12 8.12695ZM9.25 12.627C9.25 14.1458 10.4812 15.377 12 15.377C13.5188 
+                       15.377 14.75 14.1458 14.75 12.627C14.75 11.1082 13.5188 9.87695 12 9.87695C10.4812 9.87695 
+                       9.25 11.1082 9.25 12.627Z" 
+                       fill="white" 
+                       fill-opacity="0.7"/>
+                      </svg> 
+                </a>
+                <a 
+                  class="mobile-social" 
+                  href="https://www.linkedin.com/in/khrystynadidukh358/" 
+                  target="_blank" 
+                  rel="noopener" 
+                  aria-label="Linkedin" 
+                  title="Linkedin"> 
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_474_9142)">
+                          <path d="M19.2238 19.2291V19.2284H19.2284V12.4576C19.2284 9.14529 18.5153 6.59375 14.643 6.59375C12.7815 6.59375 11.5323 7.61529 11.0223 8.58375H10.9684V6.90298H7.29688V19.2284H11.12V13.1253C11.12 11.5184 11.4246 9.96452 13.4146 9.96452C15.3753 9.96452 15.4046 11.7984 15.4046 13.2284V19.2291H19.2238Z" fill="white"/>
+                          <path d="M1.07812 6.90625H4.90582V19.2316H1.07812V6.90625Z" fill="white"/>
+                          <path d="M2.98645 0.769531C1.76261 0.769531 0.769531 1.76261 0.769531 2.98645C0.769531 4.2103 1.76261 5.22415 2.98645 5.22415C4.2103 5.22415 5.20338 4.2103 5.20338 2.98645C5.20261 1.76261 4.20953 0.769531 2.98645 0.769531V0.769531Z" fill="white"/>
+                      </g>
+                      <defs>
+                          <clipPath id="clip0_474_9142">
+                              <rect width="20" height="20" fill="white"/>
+                          </clipPath>
+                      </defs>
+                  </svg> 
+                </a>
+            </div>
+        </div>
         <main>
         <section class="hero-section" id="hero-section">
             <div class="container">
@@ -320,19 +459,21 @@
                       <div class="product-section__card-container">
                             <div class="blur-background"></div>
                             <article class="product-section__article">
-                                <div class="product-header-container">
-                                    <h4 class="product-section__article-title">Навчальна програма "Елементи"</h4>
-                                    <button class="product-section__article-btn" 
-                                    type="button"
-                                    title="Перейти"
-                                    aria-label="Перейти">
-                                        <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
-                                    </button>
-                                   </div>
-                                    <div class="product-section__number">1</div>
-                                <p class="product-section__text">Ми зібрали все найкраще від форматів наставництва, 
-                                 курсу і<br> мастермайду та зробили унікальний навчальний продукт.
-                                </p>
+                                <div class="visible-content">
+                                    <div class="product-header-container">
+                                        <h4 class="product-section__article-title">Навчальна програма "Елементи"</h4>
+                                        <button class="product-section__article-btn" 
+                                        type="button"
+                                        title="Перейти"
+                                        aria-label="Перейти">
+                                            <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
+                                        </button>
+                                       </div>
+                                        <div class="product-section__number">1</div>
+                                    <p class="product-section__text">Ми зібрали все найкраще від форматів наставництва, 
+                                     курсу і<br> мастермайду та зробили унікальний навчальний продукт.
+                                    </p>
+                                </div>
                             
                                <div class="product-section__hover-content">
                                 <div class="header-hover-container">
@@ -364,20 +505,22 @@
                        <div class="product-section__card-container">
                             <div class="blur-background"></div>
                              <article class="product-section__article">
-                              <div class="product-header-container">
-                                   <h4 class="product-section__article-title">Бізнес-<br>консалтинг</h4>
-                                   <button
-                                   class="product-section__article-btn" 
-                                   type="button"
-                                   title="Перейти"
-                                   aria-label="Перейти">
-                                       <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
-                                   </button>
-                                  </div>
-                                   <div class="product-section__number">2</div>
-                               <p class="product-section__text">Створюємо таку систему, яка дозволить Вам масштабувати<br> бізнес 
-                                   без втрат у якості, у часі та без стресу.
-                               </p>
+                              <div class="visible-content">
+                                <div class="product-header-container">
+                                    <h4 class="product-section__article-title">Бізнес-<br>консалтинг</h4>
+                                    <button
+                                    class="product-section__article-btn" 
+                                    type="button"
+                                    title="Перейти"
+                                    aria-label="Перейти">
+                                        <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
+                                    </button>
+                                   </div>
+                                    <div class="product-section__number">2</div>
+                                <p class="product-section__text">Створюємо таку систему, яка дозволить Вам масштабувати<br> бізнес 
+                                    без втрат у якості, у часі та без стресу.
+                                </p>
+                              </div>
                           
                                <div class="product-section__hover-content">
                                    <div class="header-hover-container">
@@ -407,19 +550,21 @@
                       <div class="product-section__card-container">
                             <div class="blur-background"></div>
                             <article class="product-section__article">
-                               <div class="product-header-container">
-                                <h4 class="product-section__article-title">Продюсування та запуск інфопродуктів</h4>
-                                <button class="product-section__article-btn" 
-                                type="button"
-                                title="Перейти"
-                                aria-label="Перейти">
-                                    <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
-                                </button>
+                               <div class="visible-content">
+                                <div class="product-header-container">
+                                    <h4 class="product-section__article-title">Продюсування та запуск інфопродуктів</h4>
+                                    <button class="product-section__article-btn" 
+                                    type="button"
+                                    title="Перейти"
+                                    aria-label="Перейти">
+                                        <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
+                                    </button>
+                                   </div>
+                                    <div class="product-section__number">3</div>
+                                <p class="product-section__text">Допомагаємо експертам, блогерам і медійним особам<br> упакувати 
+                                експертизу в якісний та прибутковий продукт.
+                                </p>
                                </div>
-                                <div class="product-section__number">3</div>
-                            <p class="product-section__text">Допомагаємо експертам, блогерам і медійним особам<br> упакувати 
-                            експертизу в якісний та прибутковий продукт.
-                            </p>
                            
                             <div class="product-section__hover-content">
                                <div class="header-hover-container">
@@ -451,20 +596,22 @@
                       <div class="product-section__card-container">
                             <div class="blur-background"></div>
                             <article class="product-section__article">
-                                <div class="product-header-container">
-                                    <h4 class="product-section__article-title">Особиста робота з Христиною</h4>
-                                <button 
-                                class="product-section__article-btn" 
-                                type="button"
-                                title="Перейти"
-                                aria-label="Перейти">
-                                    <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
-                                </button>
+                                <div class="visible-content">
+                                    <div class="product-header-container">
+                                        <h4 class="product-section__article-title">Особиста робота з Христиною</h4>
+                                    <button 
+                                    class="product-section__article-btn" 
+                                    type="button"
+                                    title="Перейти"
+                                    aria-label="Перейти">
+                                        <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
+                                    </button>
+                                    </div>
+                                    <div class="product-section__number">4</div>
+                                <p class="product-section__text">Хочете максимального фокусу на вашому бізнесі?<br> 
+                                    Працюємо над вашим запитом у форматі наставництва.
+                                </p>
                                 </div>
-                                <div class="product-section__number">4</div>
-                            <p class="product-section__text">Хочете максимального фокусу на вашому бізнесі?<br> 
-                                Працюємо над вашим запитом у форматі наставництва.
-                            </p>
         
                             <div class="product-section__hover-content">
                                     <div class="header-hover-container">
@@ -492,10 +639,110 @@
                       </div>
                     </li>
                 </ul>
+
+                <ul class="product-mobile-list">
+                    <li class="mobile-item">
+                        <div class="product-mobile-container">
+                          <div class="mobile-number">1</div>
+                          <h4 class="product-mobile__article-title">Навчальна програма "Елементи"</h4>
+                          <a 
+                          href="./elements.html"
+                          class="product-section__hover-btn product-mobile-btn" 
+                          type="button"
+                          title="Перейти"
+                          aria-label="Перейти">Дізнатися більше
+                          <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
+                          </a>
+                        </div>
+                        <div class="product-section__mobile-text">
+                            <h5>Які результати ви отримаєте:</h5>
+                            <ul class="mobile-text-list">
+                                <li>збільшення доходу мінімум х2</li>
+                                <li>старт бізнесу або безпечний перехід з найму в бізнес</li>
+                                <li>розвиток власної справи та масштабування</li>
+                                <li>запуск нових продуктів (товарів чи послуг)</li>
+                                <li>збір «своєї» команди та стандартизація бізнесу</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="product-mobile-container">
+                            <div class="mobile-number">2</div>
+                            <h4 class="product-mobile__article-title">Бізнес-<br>консалтинг</h4>
+                            <a href="./product-modal-1.html" 
+                            class="product-section__hover-btn product-mobile-btn" 
+                            type="button"
+                            title="Перейти"
+                            aria-label="Перейти">Дізнатися більше
+                            <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
+                             </a> 
+                        </div>
+                        <div class="product-section__mobile-text">
+                        <h5>Які результати ви отримаєте:</h5>
+                         <ul class="mobile-text-list">
+                          <li>сайт, що відображає вашу експертизу та підвищує конверсії.</li>
+                           <li>автоматизовані процеси залучення та взаємодії з аудиторією</li>
+                          <li>методологію курсу</li>
+                          <li>сценарії прогрівів</li>
+                          <li>IT інфрструктуру та підтримку</li>
+                          <li>систематизацію та автоматизацію бізнесу</li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="product-mobile-container">
+                            <div class="mobile-number">3</div>
+                            <h4 class="product-mobile__article-title">Продюсування та запуск інфопродуктів</h4>
+                            <a href="./product-modal-2.html" 
+                            class="product-section__hover-btn product-mobile-btn" 
+                            type="button"
+                            title="Перейти"
+                            aria-label="Перейти">Дізнатися більше
+                            <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
+                             </a> 
+                           </div>
+                            <div class="product-section__mobile-text">
+                                <h5>Які результати ви отримаєте:</h5>
+                                <ul class="mobile-text-list" >
+                                    <li>більш здорове, щасливе й наповнене життя (і так, це самодостатня ціль)</li>
+                                    <li>  старт бізнесу або безпечний перехід з найму у власну справу</li>
+                                    <li> розвиток власної справи: порозумієтесь з цифрами в бізнесі,<br> 
+                                        зможете впливати на потік клієнтів, оволодієте практичними інструментами</li>
+                                    <li>збір "своєї" команди, стандартизація процесів, що працюють у системі</li>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="product-mobile-container">
+                            <div class="mobile-number">4</div>
+                            <h4 class="product-mobile__article-title">Особиста робота з Христиною</h4>
+                            <a 
+                            href="./product-modal-3.html" 
+                            class="product-section__hover-btn product-mobile-btn" 
+                            type="button"
+                            title="Перейти"
+                            aria-label="Перейти">Дізнатися більше
+                            <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
+                             </a> 
+                            </div>
+                        <div class="product-section__mobile-text">
+                            <h5>Які результати ви отримаєте:</h5>
+                        <ul class="mobile-text-list">
+                            <li>X2-X5 зростання доходів</li>
+                            <li>системність</li>
+                            <li>швидкість</li>
+                            <li>підтримку у прийнятті ключових рішень</li>
+                            <li> І це ще не все! Навіть є медитації. Так-так, поруч із бізнес-моделями</li>
+                            <li>необмежений доступ до лекцій Бази знань</li>
+                            <li>підтримуюче середовище однодумців</li>
+                        </ul>
+                       </div> 
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="diagnostics-section" id="diagnostics-section">
-            <div class="container">
+          <div class="container">
              <div class="diagnostic-section_container">
               <article class="diagnostic-section__card">
                 <!-- <video autoplay muted loop class="diagnostic-section-video">
@@ -507,26 +754,25 @@
                     <p class="diagnostic-section__card-text">Можливість зафіксувати найнижчу ціну на будь-який з трьох тарифів
                      Елементів за 99€. Сума, яку ви оплачуєте, мінусується з фінальної
                       вартості і дозволяє не хвилюватись щодо зростання ціни.</p>
-                    <a 
-                      href="#hero-section"
+                    <button 
                       class="diagnostic-section__button open-form-button" 
                       type="button"  
                       aria-label="Перейти">
                         Залишити Заявку
                         <img class="diagnostic-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow">
-                   </a>
+                   </button>
               </article>
               <article class="diagnostic-section__videocard">
                 <img src="./images/Khris_diagnostic.png" alt="" class="diagnostic-section__videocard-img">
                 <div class="dianostic-section__videocard-container">
                     <div class="dianostic-section__videocard-playbutton" id="play-button">
-                        <img src="./images/play-button.png" alt="дивитись" class="dianostic-sectgion__videocard-playicon">
+                        <img src="./images/play-button.png" alt="дивитись" class="dianostic-section__videocard-playicon">
                         <span class="dianostic-section__videocard-buttontext">Відео-візитівка</span>
                     </div>
                     <div class="modal" id="video-modal" style="display: none;">
                         <span class="close" id="close-button">&times;</span>
                         <video class="modal-video" id="modal-video" controls>
-                            <source src="./video/video-vizutivka-1.mp4" type="video/mp4">
+                            <source src="./video/video-vizutivka.MOV" type="video/mp4">
                             Ваш браузер не підтримує відео.
                         </video>
                     </div>
@@ -534,7 +780,7 @@
                 </div>
               </article>
              </div>
-            </div>
+           </div>
         </section>
         <section class="faq-section" id="faq-section">
             <div class="container">
@@ -762,6 +1008,95 @@
                 </article>
               </li>
              </ul>
+             <ul class="bonus-visible-mobile">
+                <li class="bonus-visible-item bonus-item-1">
+                 <div class="bonus-section__card-btn">
+                     <a 
+                         href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite" 
+                         class="rounded-button" 
+                         target="_blank" 
+                         rel="noopener" 
+                         aria-label="Перейти">
+                         <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
+                     </a>
+                 </div>
+                 <h3 class="bonus-section__hover-title">Отримай безкоштовні матеріали</h3>
+                 <h5 class="bonus-section__hover-subtitle">Забирайте корисні матеріали, які допоможуть вам:</h5>
+                 <p class="bonus-section__hover-text">визначити нішу</p>
+                 <p class="bonus-section__hover-text">покращити продажі</p>
+                 <p class="bonus-section__hover-text">масштабувати бізнес</p>
+                 <p class="bonus-section__hover-text">Зробіть перший крок до впевненого ведення бізнесу та фінансового зростання.
+                      Почніть діяти вже зараз!</p>
+                 <div class="bonus-section__hover-btn">
+                     <a 
+                         href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite" 
+                         class="bonus-link" 
+                         target="_blank" 
+                         rel="noopener" 
+                         aria-label="Перейти">Залишити Заявку 🔥
+                     </a>
+                 </div>
+                </li>
+                <li class="bonus-visible-item bonus-item-2">
+                 <div class="bonus-section__card-btn">
+                     <a 
+                     href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite" 
+                     class="rounded-button" 
+                     target="_blank" 
+                     rel="noopener" 
+                     aria-label="Перейти"
+                     >
+                     <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
+                    </a>  
+                 </div>
+                 <h3 class="bonus-section__hover-title">Взламай<br> свою дофамінову<br> систему</h3>
+                 <h5 class="bonus-section__hover-subtitle">Поєднайте задоволення від власних результатів
+                      із використанням сучасних технологій!</h5>
+                 <p class="bonus-section__hover-text">переходьте у дофамін-бот</p>
+                 <p class="bonus-section__hover-text">ставте конкретні цілі</p>
+                 <p class="bonus-section__hover-text"> отримуйте заряд мотивації та винагороду за прогрес</p>
+                     <div class="bonus-section__hover-btn">
+                         <a 
+                         href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite" 
+                         class="bonus-link" 
+                         target="_blank" 
+                         rel="noopener" 
+                         aria-label="Перейти"
+                         >Залишити Заявку 🔥
+                        </a>  
+                    </div> 
+                </li>
+                <li class="bonus-visible-item bonus-item-3">
+                 <div class="bonus-section__card-btn">
+                     <a 
+                     href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite" 
+                     class="rounded-button" 
+                     target="_blank" 
+                     rel="noopener" 
+                     aria-label="Перейти"
+                     >
+                     <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
+                    </a>  
+                    </div>
+                 <h3 class="bonus-section__hover-title hover-title-3">Почни працювати<br> по спринтах<br> вже зараз!</h3>
+                 <h5 class="bonus-section__hover-subtitle">Досягайте бізнес-цілі легко! Як? Працюючи по спринтах!
+                     Допоможе наш спринт-бот</h5>
+                 <p class="bonus-section__hover-text">Поставте ціль на тиждень</p>
+                 <p class="bonus-section__hover-text">Оберіть ключові показники досягнення цілі</p>
+                 <p class="bonus-section__hover-text">В кінці тижня бот запитає вас про результат</p>
+                 <p class="bonus-section__hover-text">Регулярна звітність на 70% збільшує вірогідність досягнення цілі</p>
+                     <div class="bonus-section__hover-btn">
+                         <a 
+                         href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite" 
+                         class="bonus-link" 
+                         target="_blank" 
+                         rel="noopener" 
+                         aria-label="Перейти"
+                         >Залишити Заявку 🔥
+                        </a>
+                    </div>
+                </li>
+             </ul>
             </div>
         </section>
         <section class="reviews-section" id="reviews-section">
@@ -781,7 +1116,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -875,7 +1210,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -905,7 +1240,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -935,7 +1270,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -965,7 +1300,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -995,7 +1330,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -1025,7 +1360,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -1055,7 +1390,7 @@
                          Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
                          (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
                          можуть тільки великі люди... <br>
-                          Дякую за практичні поради за зміну мислення ,позитив і прямоту.
+                         Дякую за практичні поради за зміну мислення ,позитив і прямоту.
                         </p>
                         <div class="reviews-section__videocard-container">
                             <div class="reviews-section__videocard-playbutton play-button">
@@ -1239,6 +1574,7 @@
                 <button class="close-form" type="button">&times;</button>
             </div>
         </div>
+        <script src="./scripts/mobileMenu.js"></script>
  </body>
 </html> 
 
