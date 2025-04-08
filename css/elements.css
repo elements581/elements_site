@@ -812,7 +812,7 @@ transform: rotate(45deg);
   .hero-section-anonce {
     width: 330px;
     flex-wrap: wrap;
-    margin-block-end: 270px;
+    margin-block-end: 200px;
   }
 }
 
@@ -1339,6 +1339,7 @@ transform: rotate(45deg);
     width: 50%;
     overflow-x: hidden;
     overflow-y: auto;
+    scrollbar-width: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -4447,6 +4448,12 @@ margin-bottom: 4px;
     position: relative;
     bottom: 0px;
     left: 675px;
+}
+
+@media screen and (max-width: 480px) {
+    .tarif-section-title::after {
+        display: none;
+    }
 }
 
 .tarif-container {
