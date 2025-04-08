@@ -692,6 +692,17 @@ display: flex;
 
 /* hero section */
 
+.hero-section {
+    padding-inline: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section {
+        padding-inline: 4px;
+    }
+     
+}
+
 .hero-section__button {
     display: flex;
     align-items: center; 
@@ -1150,9 +1161,15 @@ display: flex;
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center center; 
-    margin-inline: 4px;
     position: relative;
+    padding-inline: 0;
     margin-bottom: 70px;
+}
+
+@media screen and (max-width: 480px) {
+    .product-section {
+        padding-inline: 20px;
+    }
 }
 
 .product-section__title {
@@ -1501,6 +1518,7 @@ display: flex;
 @media screen and (max-width: 480px) {
     .diagnostics-section {
         height: 865px;
+         padding-inline: 20px;
         margin-block-end: 80px;
     }
 }
@@ -1615,7 +1633,7 @@ display: flex;
 
  @media screen and (max-width: 480px) {
    .dianostic-section__videocard-playbutton {
-    margin-inline-start: 215px;
+    margin-inline-start: 220px;
    }
  }
 
@@ -1893,7 +1911,7 @@ summary::marker {
 
  .bonus-visible-item {
    height: 700px;
-   width: 99%;
+   width: 100%;
  }
 
  .bonus-item-1 {
