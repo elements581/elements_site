@@ -1350,22 +1350,6 @@ transform: rotate(45deg);
     }  
 }
 
-@media only screen and (max-width: 768px) { 
-    .teacher-about-container {
-        overflow-y: auto; 
-        -webkit-overflow-scrolling: touch; 
-    }
-
-    .teacher-about-container {
-        display: none; 
-    }
-    
-    .teacher-about-container {
-        scrollbar-width: none; 
-        -ms-overflow-style: none; 
-    }
-}
-
 .teacher-about-card {
     position: relative;
     height: 100%;
