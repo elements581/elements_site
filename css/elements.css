@@ -103,7 +103,7 @@ body {
     .container {
         width: 100%;
         margin: 0 auto;
-        padding: 0 2px;
+        padding: 0;
       }
   }
 
@@ -3611,7 +3611,7 @@ transform: rotate(45deg);
 
 @media screen and (max-width: 480px) {
     .bonus-card-1 {
-        transform: translateX(30%);
+        transform: translateX(25%);
         z-index: 1;
         top: 35px;
     }
@@ -3623,7 +3623,7 @@ transform: rotate(45deg);
     }
     
     .bonus-card-3 {
-        transform: translateX(-30%);
+        transform: translateX(-25%);
         z-index: 1;
         top: 35px;
     } 
