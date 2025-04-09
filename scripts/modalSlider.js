@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.display = 'none';
         });
 
-        const visibleCount = window.innerWidth > 768 ? 3 : 1; 
+        const visibleCount = window.innerWidth > 768 ? 3 : 2; 
 
     
         for (let i = 0; i < visibleCount; i++) {
