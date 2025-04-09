@@ -2264,7 +2264,6 @@ summary::marker {
 
 .reviews-section__list {
     display: flex;
-    gap: 16px;
     overflow: hidden;
     flex-wrap: nowrap;
     margin-inline-start: 60px;
@@ -2289,6 +2288,8 @@ summary::marker {
     border-radius: 20px;
     padding: 24px;
     position: relative;
+    margin-inline-end: 16px;
+    transition: background-color 0.7s ease, color 1s ease;
 }
 
 @media screen and (max-width: 480px) {
@@ -2296,6 +2297,7 @@ summary::marker {
     height: 312px;
     width: 310px;
     padding: 16px;
+    margin-inline-end: 8px;  
   }
 }
 
@@ -2388,7 +2390,8 @@ margin-bottom: 4px;
 }
 
 .reviews-section__card.is-active {
-background:linear-gradient(101.29deg, #FFEAFD 1.08%, #D3E1FF 100%);
+  background:linear-gradient(101.29deg, #FFEAFD 1.08%, #D3E1FF 100%);
+  transition: background-color 0.7s ease, color 1s ease;  
 }
 
 .reviews-section__videocard-container {
