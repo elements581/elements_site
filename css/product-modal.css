@@ -740,7 +740,6 @@ html, body {
 
 .product-modal .reviews-section__list {
   margin-inline-start: auto;
-  gap: 10px;
 }
 
 .product-modal .reviews-section__item {
@@ -754,6 +753,8 @@ html, body {
     padding-block: 24px;
     padding-inline: 30px;
     position: relative;
+    margin-inline-start: 10px;
+    transition: background-color 0.7s ease, color 1s ease;
 }
 
 @media screen and (max-width: 480px) {
@@ -762,6 +763,7 @@ html, body {
         max-width: 300px;
         width: 95%;
         padding: 16px;
+        margin-inline-start: 5px;
     } 
 }
 
