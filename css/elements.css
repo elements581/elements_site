@@ -4102,14 +4102,14 @@ z-index: -1;
     border-radius: 20px;
     padding: 24px;
     position: relative;
-    transition: background-color 0.7s ease, color 1s ease;
     margin-inline-end: 16px;
 }
 
 @media screen and (max-width: 480px) {
     .reviews-section__card {
-         height: 380px;
+        height: 380px;
         transform: scale(0.9);
+        transition: background-color 0.7s ease, color 1s ease;
     }
 }
 
