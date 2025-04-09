@@ -10,7 +10,7 @@ export default function initializeReviewsSlider() {
     function updateCards() {
         
         const isMobile = window.innerWidth <= 480; 
-        const visibleCardsCount = isMobile ? 1 : 3; 
+        const visibleCardsCount = isMobile ? 2 : 3; 
     
         cards.forEach((card, index) => {
            
