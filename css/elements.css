@@ -4080,7 +4080,6 @@ z-index: -1;
 
 .reviews-section__list {
     display: flex;
-    gap: 16px;
     overflow: hidden;
     flex-wrap: nowrap;
     margin-block-end: 40px;
@@ -4089,7 +4088,7 @@ z-index: -1;
 
 @media screen and (max-width: 480px) {
     .reviews-section__list {
-        margin-inline-start: 330px;
+        margin-inline-start: 316px;
     }
 }
 
@@ -4103,6 +4102,8 @@ z-index: -1;
     border-radius: 20px;
     padding: 24px;
     position: relative;
+    transition: background-color 0.7s ease, color 1s ease;
+    margin-inline-end: 16px;
 }
 
 @media screen and (max-width: 480px) {
@@ -4176,7 +4177,7 @@ margin-bottom: 4px;
         left: 0;
         box-shadow: inset 2px 5px 20px 1px rgb(136 107 208);
         transition: background-color 0.7s ease, color 1s ease;
-        margin-inline: 10px;
+        margin-inline-start: 10px;
         transform: scale(1.0);
      }  
 }
