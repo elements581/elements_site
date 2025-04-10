@@ -693,11 +693,14 @@ display: flex;
 /* hero section */
 
 .hero-section {
+    padding-block-start: 0;
     padding-inline: 0;
+    background-color: var(--color-primary-ligh);
 }
 
 @media screen and (max-width: 480px) {
     .hero-section {
+        padding-block-start: 4px;
         padding-inline: 4px;
     }
      
@@ -762,10 +765,6 @@ display: flex;
     transform: rotate(45deg); 
 }
 
-.hero-section {
-    background-color: var(--color-primary-ligh);
-}
-
 .hero-section__container {
     display: flex;
     gap: 4px;
@@ -788,7 +787,7 @@ display: flex;
 
 @media screen and (max-width: 480px) {
     .hero-section__wraper {
-        width: 99%;
+        width: 100%;
         max-width: none;
         min-height: 400px;
     }
@@ -861,7 +860,7 @@ display: flex;
 
 @media screen and (max-width: 480px) {
     .hero-section__image {
-        width: 99%;
+        width: 100%;
         max-width: none;
         min-height: 400px;
         object-fit: cover; 
