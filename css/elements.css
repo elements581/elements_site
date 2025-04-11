@@ -143,6 +143,23 @@ svg * {
     display: none; 
 }
 
+.sections-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sections-title-icon {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .sections-title-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* header */
 
 .header {
@@ -2733,19 +2750,6 @@ transform: rotate(45deg);
     margin-block-end: 60px;
 }
 
-.tract-title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/arraow-after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    right: -750px;
-}
-
 @media screen and (max-width: 480px) {
     .track-section {
         padding-block: 0 60px;
@@ -2755,13 +2759,6 @@ transform: rotate(45deg);
       .tract-title {
           font-size: 32px;
           margin-block-end: 40px;
-      }
-      
-      .tract-title::after {
-          width: 40px;
-          height: 40px;
-          bottom: 0px;
-          right: -80px;
       }  
 }
 
@@ -3387,27 +3384,6 @@ transform: rotate(45deg);
     } 
 }
 
-.format-section-title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/arraow-after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    right: -735px;
-}
-
-@media screen and (max-width: 480px) {
-    .format-section-title::after {
-        width: 40px;
-        height: 40px;
-        right: -150px;
-    } 
-}
-
 .format-list {
     display: flex;
     flex-direction: column;
@@ -3818,28 +3794,6 @@ transform: rotate(45deg);
         width: 60%;
         line-height: 1.2;
         margin-block-end: -10px;
-    } 
-}
-
-.program-section-title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/arraow-after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    left: 560px;
-}
-
-@media screen and (max-width: 480px) {
-    .program-section-title::after {
-        width: 40px;
-        height: 40px;
-        left: 270px;
-        bottom: 45px;
     } 
 }
 
