@@ -143,6 +143,33 @@ svg * {
     display: none; 
 }
 
+.sections-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spec-section-container {
+  margin-inline: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .spec-section-container {
+    margin-inline: 20px;
+  }
+}
+
+.sections-title-icon {
+  width: 60px;
+  height: 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .sections-title-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 /* header */
 
 .header {
@@ -1070,7 +1097,6 @@ display: flex;
     font-size: 60px;
     font-weight: 500;
     color: var(--color-dark);
-    margin-inline-start: 61px;
     margin-block-end: 24px;
 }
 
@@ -1079,28 +1105,6 @@ display: flex;
         font-size: 32px;
         line-height: 0;
         max-width: 244px;
-        margin-inline-start: 20px;
-    }
-}
-
-.partners-section__title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/arraow-after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    right: -500px;
-}
-
-@media screen and (max-width: 480px) {
-    .partners-section__title::after {
-        right: -100px;
-        height: 40px;
-        width: 40px;
     }
 }
 
@@ -2268,7 +2272,6 @@ summary::marker {
     font-size: 60px;
     font-weight: 500;
     color: var(--color-dark);
-    margin-inline-start: 60px;
     margin-block-end: 40px;
 }
 
@@ -2277,30 +2280,8 @@ summary::marker {
         font-size: 32px;
         line-height: 0.2;
         width: 251px;
-        margin-inline-start: 20px;
         margin-block-end: 24px;
     } 
-}
-
-.reviews-section__title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/arraow-after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    right: -565px;
-}
-
-@media screen and (max-width: 480px) {
-  .reviews-section__title::after {
-    height: 40px;
-    width: 40px;
-    right: -145px;
-  }  
 }
 
 .reviews-section__list {
