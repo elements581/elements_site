@@ -4272,6 +4272,9 @@ margin-bottom: 4px;
 }
 
 .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     height: 60px;
     width: 60px;
