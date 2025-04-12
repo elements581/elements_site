@@ -3861,7 +3861,7 @@ transform: rotate(45deg);
 @media screen and (max-width: 480px) {
     .course-title-container {
         flex-direction: row;
-        gap: 20px;
+        gap: 10px;
     }  
 }
 
