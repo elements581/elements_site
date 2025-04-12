@@ -2783,7 +2783,7 @@ position: relative;
     margin-block: 5px 15px;
     margin-inline: auto;
     background: var(--color-light);
-    min-height: 620px;
+    height: 100dvh;
     width: 92%;
     border: none;
     border-radius: 24px;
