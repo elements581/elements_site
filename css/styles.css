@@ -1193,27 +1193,6 @@ display: flex;
     }
 }
 
-.product-section__title::after {
-    content: "";
-    display: inline-block;
-    background-image: url(../icons/product-title_after.svg);
-    width: 60px;
-    height: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    bottom: 0px;
-    right: -825px;
-}
-
-@media screen and (max-width: 480px) {
-    .product-section__title::after {
-        height: 40px;
-        width: 40px;
-        right: -125px;
-    }
-}
-
 .product-section__list {
     display: flex;
     flex-wrap: wrap;
