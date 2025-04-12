@@ -1515,6 +1515,9 @@ display: flex;
     color: var(--color-dark);
     margin-block-end: 12px;
  }
+ .product-last-item {
+    display: none;
+  }
 }
 
 /* diagnostic section */
