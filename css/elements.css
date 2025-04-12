@@ -5014,6 +5014,16 @@ z-index: -1;
 
 /* faq-section */
 
+.faq-section {
+  margin-block-start: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .faq-section {
+    margin-block-start: -100px;
+  }
+}
+
 .faq_section__container {
     display: flex;
     justify-content: space-between;
