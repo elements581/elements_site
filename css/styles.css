@@ -1916,9 +1916,17 @@ summary img {
 }
 
 summary::marker {
-            content: "";
-            display: none; 
- }
+  content: none;
+  display: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary, details {
+  list-style: none;
+}
 
 /* bonus section */
 
