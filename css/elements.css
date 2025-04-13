@@ -1413,6 +1413,7 @@ transform: rotate(45deg);
 @media screen and (max-width: 480px) {
     .aboutcard-content {
         padding: 0; 
+        text-align: center;
     }  
 }
 
@@ -1440,7 +1441,7 @@ transform: rotate(45deg);
     .rune-image-2 {
       height: 140px;
       margin-block: 42px 65px;
-      margin-inline: 75px auto
+      margin-inline: auto;
      } 
    }
 
