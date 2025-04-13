@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  prevButton.addEventListener("click", showNextReview);
-  nextButton.addEventListener("click", showPrevReview);
+  nextButton.addEventListener("click", showNextReview);
+  prevButton.addEventListener("click", showPrevReview);
 
   document.addEventListener("touchstart", handleReviewTouchStart, {
     passive: true,
