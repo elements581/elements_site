@@ -42,4 +42,50 @@ cardsContainer.addEventListener('wheel', (event) => {
     updateCards(); 
 });
 
+let touchStartY = 0;
+let touchEndY = 0;
+
+function handleTouchStart(event) {
+    touchStartY = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+    touchEndY = event.changedTouches[0].clientY; 
+    handleSwipe(); 
+}
+
+function handleSwipe() {
+    const threshold = 50; 
+    const distance = touchEndY - touchStartY;
+
+    if (distance > threshold) {
+        
+        if (currentCard > 0) {
+            currentCard--;
+        }
+    } else if (distance < -threshold) {
+        
+        if (currentCard < paginationDots.length - 1) {
+            currentCard++;
+        }
+    }
+    
+    updateCards(); 
+}
+
+
+function checkDevice() {
+    const isMobile = window.innerWidth <= 480; 
+    if (isMobile) {
+        cardsContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+        cardsContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
+    } else {
+        
+        cardsContainer.removeEventListener('touchstart', handleTouchStart);
+        cardsContainer.removeEventListener('touchend', handleTouchEnd);
+    }
+}
+
 updateCards();
+checkDevice();
+window.addEventListener('resize', checkDevice); 
