@@ -584,6 +584,9 @@ display: flex;
   }
 
   .close-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 40px;
     border: none;
@@ -2836,6 +2839,9 @@ position: relative;
 }
 
 .close-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(85, 107, 167, 0.25);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
