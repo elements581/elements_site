@@ -547,11 +547,31 @@ html, body {
     height: 71px;
   }
 }
+
 .modal-footer-videocard {
     margin-block-start: 0;
     margin-block-end: 80px;
 
 }
+
+@media screen and (max-width: 396px) {
+    .modal-footer-videocard {
+        margin-block-start: 0;
+        margin-block-end: 60px;
+    } 
+}
+
+.mod-close {
+    right: 500px;
+}
+
+@media screen and (max-width: 480px) {
+    .mod-close {
+      top: 45px;
+      right: 20px;
+    } 
+}
+
 
 .footer-nav-container {
     display: flex;
@@ -575,9 +595,13 @@ html, body {
 @media screen and (max-width: 480px) {
     .footer-nav-container_2 {
         margin-block-end: 10px;
-        max-height: 311px;
+        height: 511px;
         max-width: 1220px;
         width: 100%;
+    }
+
+    .modal-footer-container {
+        position: relative;
     }
       
 }
@@ -667,9 +691,17 @@ html, body {
     gap: 17px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 411px)  and (max-width: 480px) {
     .modal-footer__videocard-playbutton {
-        display: none;
+        position: absolute;
+        top: 230px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .modal-footer__videocard-playbutton {
+        position: absolute;
+        top: 240px;
     }
 }
 
