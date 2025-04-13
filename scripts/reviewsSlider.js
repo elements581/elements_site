@@ -66,8 +66,8 @@ export default function initializeReviewsSlider() {
     }
   }
 
-  prevButton.addEventListener("click", showPrevCard);
-  nextButton.addEventListener("click", showNextCard);
+  prevButton.addEventListener("click", showNextCard);
+  nextButton.addEventListener("click", showPrevCard);
 
   document.addEventListener("touchstart", handleTouchStart, { passive: true });
   document.addEventListener("touchend", handleTouchEnd, { passive: true });
