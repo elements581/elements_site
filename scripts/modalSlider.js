@@ -1,51 +1,73 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.reviews-section__card.product-slider-card');
-    const prevButton = document.getElementById('prevBtn');
-    const nextButton = document.getElementById('nextBtn');
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(
+    ".reviews-section__card.product-slider-card"
+  );
+  const prevButton = document.getElementById("prevBtn");
+  const nextButton = document.getElementById("nextBtn");
 
-    let currentIndex = 0;
+  let currentIndex = 0;
+  let touchStartX = 0;
+  let touchEndX = 0;
 
-    function updateCards() {
-        
-        cards.forEach((card) => {
-            card.style.display = 'none';
-        });
+  function updateReviews() {
+    cards.forEach((card) => {
+      card.style.display = "none";
+    });
 
-        const visibleCount = window.innerWidth > 768 ? 3 : 2; 
+    const visibleCount = window.innerWidth > 768 ? 3 : 2;
 
-    
-        for (let i = 0; i < visibleCount; i++) {
-            const cardToShow = currentIndex + i;
-            if (cardToShow < cards.length) { 
-                cards[cardToShow].style.display = 'block';
-            }
-        }
+    for (let i = 0; i < visibleCount; i++) {
+      const cardToShow = currentIndex + i;
+      if (cardToShow < cards.length) {
+        cards[cardToShow].style.display = "block";
+      }
     }
+  }
 
-    function showPrevCard() {
-        if (currentIndex > 0) {
-            currentIndex--; 
-            updateCards(); 
-        }
+  function showPrevReview() {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateReviews();
     }
+  }
 
-    function showNextCard() {
-        const visibleCount = window.innerWidth > 768 ? 3 : 1; 
-        if (currentIndex + visibleCount < cards.length) { 
-            currentIndex++; 
-            updateCards();  
-        }
+  function showNextReview() {
+    const visibleCount = window.innerWidth > 768 ? 3 : 1;
+    if (currentIndex + visibleCount < cards.length) {
+      currentIndex++;
+      updateReviews();
     }
+  }
 
-    prevButton.addEventListener('click', showPrevCard);
-    nextButton.addEventListener('click', showNextCard);
+  function handleReviewTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+  }
 
-    
-    window.addEventListener('resize', updateCards);
-});
-    prevButton.addEventListener('click', showPrevCard);
-    nextButton.addEventListener('click', showNextCard);
+  function handleReviewTouchEnd(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    handleReviewsSwipe();
+  }
 
-    
-    updateCards(); 
+  function handleReviewsSwipe() {
+    const threshold = 50;
+    const distance = touchEndX - touchStartX;
+
+    if (distance > threshold) {
+      showPrevReview();
+    } else if (distance < -threshold) {
+      showNextReview();
+    }
+  }
+
+  prevButton.addEventListener("click", showPrevReview);
+  nextButton.addEventListener("click", showNextReview);
+
+  document.addEventListener("touchstart", handleReviewTouchStart, {
+    passive: true,
+  });
+  document.addEventListener("touchend", handleReviewTouchEnd, {
+    passive: true,
+  });
+
+  window.addEventListener("resize", updateReviews);
 });
