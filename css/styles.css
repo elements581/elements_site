@@ -1179,20 +1179,16 @@ display: flex;
 }
 
 .product-section__title {
-    font-family: var(--font-family-primary);
-    font-size: 60px;
-    font-weight: 500;
-    color: var(--color-light);
-    padding-block-start: 100px;
-    margin-inline-start: 56px;
+  font-family: var(--font-family-primary);
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--color-light);
 }
 
 @media screen and (max-width: 480px) {
-    .product-section__title {
-        font-size: 32px;
-        padding-block-start: 0;
-        margin-inline-start: 0;
-    }
+  .product-section__title {
+    font-size: 32px;
+  }
 }
 
 .product-section__list {
