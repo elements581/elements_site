@@ -557,7 +557,7 @@ html, body {
 @media screen and (max-width: 396px) {
     .modal-footer-videocard {
         margin-block-start: 0;
-        margin-block-end: 60px;
+        margin-block-end: 50px;
     } 
 }
 
