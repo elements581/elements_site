@@ -2,15 +2,22 @@ const cardsContainer = document.querySelector('.track-cards');
 const trackCard = document.querySelectorAll('.track-card');
 const paginationDots = document.querySelectorAll('.track-dot');
 const toggleButtons = document.querySelectorAll('.track-toggle-button');
+const trackBacks = document.querySelectorAll('.track-card-back'); 
 
 let currentCard = 0;
 
 function updateCards() {
-    cardsContainer.style.transform = `translateY(-${currentCard * 25}%)`; 
+    if (window.innerWidth > 480) {
+        cardsContainer.style.transform = `translateY(-${currentCard * 25}%)`; 
+    } else {
+        cardsContainer.style.transform = `translateX(-${currentCard * 100}%)`; 
+    }
+    
     paginationDots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentCard); 
     });
 }
+
 
 paginationDots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
@@ -19,52 +26,63 @@ paginationDots.forEach((dot, index) => {
     });
 });
 
+
 toggleButtons.forEach(button => {
     button.addEventListener('click', function() {
-        const cardInner = this.closest('.track-card-inner'); 
-        cardInner.classList.toggle('flipped'); 
+        const cardInner = this.closest('.track-card-inner');
+        
+        if (window.innerWidth <= 480) {
+            const trackBack = cardInner.querySelector('.track-card-back');
+            if (trackBack.style.display === 'block') {
+                trackBack.style.display = 'none';
+            } else {
+                trackBack.style.display = 'block';
+            }
+        } else {
+            cardInner.classList.toggle('flipped');
+        }
     });
 });
 
 cardsContainer.addEventListener('wheel', (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
-    if (event.deltaY > 0) {
-        if (currentCard < paginationDots.length - 1) {
-            currentCard++;
-        }
-    } else {
-        if (currentCard > 0) {
-            currentCard--;
+    if (window.innerWidth > 480) {
+        if (event.deltaY > 0) {
+            if (currentCard < paginationDots.length - 1) {
+                currentCard++;
+            }
+        } else {
+            if (currentCard > 0) {
+                currentCard--;
+            }
         }
     }
-
+    
     updateCards(); 
 });
 
-let touchStartY = 0;
-let touchEndY = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
 function handleTouchStart(event) {
-    touchStartY = event.touches[0].clientY;
+    touchStartX = event.touches[0].clientX;
 }
 
 function handleTouchEnd(event) {
-    touchEndY = event.changedTouches[0].clientY; 
+    touchEndX = event.changedTouches[0].clientX;
     handleSwipe(); 
 }
 
 function handleSwipe() {
     const threshold = 50; 
-    const distance = touchEndY - touchStartY;
+    const distance = touchEndX - touchStartX;
 
-    if (distance > threshold) {
-        
+    if (distance > threshold) { 
         if (currentCard > 0) {
             currentCard--;
         }
-    } else if (distance < -threshold) {
-        
+    } else if (distance < -threshold) { 
         if (currentCard < paginationDots.length - 1) {
             currentCard++;
         }
@@ -73,19 +91,18 @@ function handleSwipe() {
     updateCards(); 
 }
 
-
 function checkDevice() {
     const isMobile = window.innerWidth <= 480; 
     if (isMobile) {
         cardsContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
         cardsContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
     } else {
-        
         cardsContainer.removeEventListener('touchstart', handleTouchStart);
         cardsContainer.removeEventListener('touchend', handleTouchEnd);
     }
 }
 
+
 updateCards();
 checkDevice();
-window.addEventListener('resize', checkDevice); 
+window.addEventListener('resize', checkDevice);
