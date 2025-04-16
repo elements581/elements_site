@@ -3302,7 +3302,7 @@ transform: rotate(45deg);
   .back-img {
     height: 42px;
     margin-block: 0 6px;
-    margin-inline-start: 125px;
+    margin-inline-start: calc(50% - 35px);
   }
 }
 
@@ -3316,7 +3316,7 @@ transform: rotate(45deg);
   .back-img-1 {
     height: 42px;
     margin-block: 0 10px;
-    margin-inline-start: 110px;
+    margin-inline-start: calc(50% - 20px);
   }
 }
 
