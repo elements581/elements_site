@@ -873,10 +873,39 @@ transform: rotate(45deg);
 }
 
 @media screen and (max-width: 480px) {
-    .hero-section__button {
-        max-width: 95%;
-        margin-inline: auto;
-    }
+  .hero-section__button {
+    display: none;
+  }
+}
+
+.hero-section__mobbutton {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section__mobbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 54px;
+    width: 95%;
+    max-width: 335px;
+    border: none;
+    background-color: var(--color-dark);
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-primary-light);
+    border-radius: 44px;
+    padding: 16px 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 680px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+  }
 }
 
 .hero-section__button--arrow {
@@ -898,15 +927,15 @@ transform: rotate(45deg);
     transform: rotate(45deg); 
 }
 
-.hero-section__button:active {
-    background-color: var(--color-primary-light); 
-    color: var(--color-dark); 
-    border: 1px solid var(--color-dark);
+.hero-section__mobbutton:active {
+  background-color: var(--color-primary-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
 }
 
-.hero-section__button:active .hero-section__button--arrow {
-    filter: invert(0); 
-    transform: rotate(45deg); 
+.hero-section__mobbutton:active .hero-section__button--arrow {
+  filter: invert(0);
+  transform: rotate(45deg);
 }
 
 .hero-section-biscard {
