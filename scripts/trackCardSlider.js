@@ -3,6 +3,7 @@ const trackCard = document.querySelectorAll('.track-card');
 const paginationDots = document.querySelectorAll('.track-dot');
 const toggleButtons = document.querySelectorAll('.track-toggle-button');
 const trackBacks = document.querySelectorAll('.track-card-back'); 
+const trackPagination = document.querySelector('.track-pagination');
 
 let currentCard = 0;
 
@@ -30,13 +31,16 @@ paginationDots.forEach((dot, index) => {
 toggleButtons.forEach(button => {
     button.addEventListener('click', function() {
         const cardInner = this.closest('.track-card-inner');
-        
+        const trackBack = cardInner.querySelector('.track-card-back');
+
         if (window.innerWidth <= 480) {
-            const trackBack = cardInner.querySelector('.track-card-back');
+            
             if (trackBack.style.display === 'block') {
-                trackBack.style.display = 'none';
+                trackBack.style.display = 'none'; 
+                trackPagination.style.display = 'flex'; 
             } else {
-                trackBack.style.display = 'block';
+                trackBack.style.display = 'block'; 
+                trackPagination.style.display = 'none'; 
             }
         } else {
             cardInner.classList.toggle('flipped');
