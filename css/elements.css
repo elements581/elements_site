@@ -4665,19 +4665,19 @@ z-index: -1;
 }
 
 .tarif-action {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 @media screen and (max-width: 480px) {
-    .tarif-action {
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 8px;
-    }  
+  .tarif-action {
+    flex-direction: column;
+  }
 }
+
 
 .tarif-section__button {
     display: flex;
@@ -4791,19 +4791,27 @@ z-index: -1;
 
 }
 
-@media screen and (max-width: 480px) {
-    .tvorets-mark {
-        right: -5px;
-        left: auto;
-    }
-    
+@media screen and (max-width: 400px) {
+  .tvorets-mark {
+    right: -5px;
+    left: auto;
+  }
 }
 
+@media screen and (min-width: 401px) and (max-width: 480px) {
+  .tvorets-mark {
+    right: -5px;
+    left: auto;
+  }
+}
+
+
 .mark-text {
-    font-family: var(--font-family-primary);
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--color-light);
+  font-family: var(--font-family-primary);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-light);
+  white-space: nowrap;
 }
 
 /* diagnostic section */
