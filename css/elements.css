@@ -4062,7 +4062,8 @@ transform: rotate(45deg);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   padding-block-start: 80px;
-  background: linear-gradient(to bottom, #820505, #6a2424);
+  background-image: url(../images/reviewsbgimg_1x.png);
+  background-size: cover;
 }
 
 @media screen and (max-width: 480px) {
