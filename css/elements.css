@@ -4563,17 +4563,20 @@ z-index: -1;
 }
 
 @media screen and (max-width: 480px) {
-    .tarif-1 {
-        height: 549px;
-    }
-    
-    .tarif-2 {
-       height: 757px;
-    }
-    
-    .tarif-3 {
-        height: 861px;
-    }  
+  .tarif-1 {
+    min-height: 549px;
+    height: auto;
+  }
+
+  .tarif-2 {
+    min-height: 757px;
+    height: auto;
+  }
+
+  .tarif-3 {
+    min-height: 861px;
+    height: auto;
+  }
 }
 
 .image-box {
