@@ -549,15 +549,13 @@ html, body {
 }
 
 .modal-footer-videocard {
-    margin-block-start: 0;
     margin-block-end: 80px;
 
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 480px) {
     .modal-footer-videocard {
-        margin-block-start: 0;
-        margin-block-end: 50px;
+        margin-block-end: 0;
     } 
 }
 
@@ -594,8 +592,8 @@ html, body {
 
 @media screen and (max-width: 480px) {
     .footer-nav-container_2 {
-        margin-block-end: 10px;
-        height: 511px;
+        margin-block-end: 0;
+        max-height: 311px;
         max-width: 1220px;
         width: 100%;
     }
@@ -639,8 +637,34 @@ html, body {
 
 @media screen and (max-width: 480px) {
     .modal-footer-card {
-        display: block;
+        display: none;
     } 
+}
+
+.model-footer-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .model-footer-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 16px;
+        border-radius: 24px;
+        background-color: var(--color-light);
+        height: 100%;
+        width: 100%;
+        padding: 14px;
+    }
+
+    .footer-mobile-container {
+         display: flex;
+         align-items: start;
+         justify-content: space-between;
+         gap: 12px;
+    }
 }
 
 .modal-footer-title {
@@ -667,9 +691,8 @@ html, body {
 @media screen and (max-width: 480px) {
     .modal-card-title {
         font-size: 20px;
-        margin-block-start: -80px;
-        margin-inline-start: 90px;
         line-height: 1.2; 
+        margin-block-start: 0;
     }  
 }
 
@@ -691,36 +714,19 @@ html, body {
     gap: 17px;
 }
 
-@media screen and (min-width: 411px)  and (max-width: 480px) {
-    .modal-footer__videocard-playbutton {
-        position: absolute;
-        top: 230px;
-    }
-}
-
-@media screen and (max-width: 410px) {
-    .modal-footer__videocard-playbutton {
-        position: absolute;
-        top: 240px;
-    }
-}
-
-.mod-foot-lst {
-    margin-block-start: 0;
-}
-
-@media screen and (max-width: 480px) {
-    .mod-foot-lst {
-        margin-block-start: -50px;
-    }  
-}
-
 .modal-footer-list {
     font-family: var(--font-family-secondary);
     font-size: 16px;
     font-weight: 500;
     color: var(--color-dark);
     margin-block-end: 8px;
+}
+
+@media screen and (max-width: 480px) {
+    .modal-footer-list {
+        font-size: 15px;
+        font-weight: 400;
+    }
 }
 
 .modal-footer-list::before {
