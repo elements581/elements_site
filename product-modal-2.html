@@ -73,28 +73,56 @@
                 <img src="./images/olenaKravets.png" alt="Фото Олени Кравець" class="modal_footer-img">
                 <div class="modal-footer-container">
                     <div class="modal-footer-videocard">
-                        <div class="modal-footer__videocard-playbutton" id="play-button">
+                        <div class="modal-footer__videocard-playbutton play-button-desktop">
                             <img src="./images/play-button.png" alt="дивитись" class="modal-footer_videocard-playicon">
                             <span class="modal-footer__videocard-buttontext">дивитись відгук</span>
                         </div>
                         <h2 class="modal-card-title">
                             Курс “Говорити собою” з Оленою Кравець
                         </h2>
-                        <div class="modal" id="video-modal" style="display: none;">
-                            <span class="close" id="close-button">&times;</span>
-                            <video class="modal-video" id="modal-video" controls>
-                                 <source src="./video/OlenaKravets_vidgyk.mp4" type="video/mp4">
+                        <div class="modal" id="video-modal-desktop" style="display: none;">
+                            <span class="close mod-close" id="close-button-desktop">&times;</span>
+                            <video class="modal-video" id="modal-video-desktop" controls>
+                                <source src="./video/KravetsOlena_vidgykFull.MP4" type="video/mp4">
                                 Ваш браузер не підтримує відео.
                             </video>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="mod-foot-lst">
                         <li class="modal-footer-list">створено сайт, воронки лідогенерації,</li>
                         <li class="modal-footer-list">прописана методологія</li>
                         <li class="modal-footer-list">побудовано відділ продажів</li>
                         <li class="modal-footer-list">набрана фокус-группа</li>
                         <li class="modal-footer-list">проведено успішний запуск</li>
                     </ul>
+                </div>
+               </article>
+               <article class="model-footer-mobile">
+                <div class="footer-mobile-container">
+                  <img src="./images/olenaKravets.png" alt="Фото Олени Кравець" class="modal_footer-img">
+                  <h2 class="modal-card-title">
+                    Курс “Говорити собою” з Оленою Кравець
+                  </h2>
+                </div>
+                <ul class="mod-foot-lst">
+                    <li class="modal-footer-list">створено сайт, воронки лідогенерації,</li>
+                    <li class="modal-footer-list">прописана методологія</li>
+                    <li class="modal-footer-list">побудовано відділ продажів</li>
+                    <li class="modal-footer-list">набрана фокус-группа</li>
+                    <li class="modal-footer-list">проведено успішний запуск</li>
+                </ul>
+                <div class="modal-footer-videocard">
+                    <div class="modal-footer__videocard-playbutton play-button-mobile">
+                        <img src="./images/play-button.png" alt="дивитись" class="modal-footer_videocard-playicon">
+                        <span class="modal-footer__videocard-buttontext">дивитись відгук</span>
+                    </div>
+                    <div class="modal" id="video-modal-mobile" style="display: none;">
+                        <span class="close mod-close" id="close-button-mobile">&times;</span>
+                        <video class="modal-video" id="modal-video-mobile" controls>
+                            <source src="./video/KravetsOlena_vidgykFull.MP4" type="video/mp4">
+                            Ваш браузер не підтримує відео.
+                        </video>
+                    </div>
                 </div>
                </article>
             </div>
@@ -168,5 +196,6 @@
       </div>
     </div>
     <script src="./scripts/formToggleModal.js"></script>
+    <script src="./scripts/modalVideoReviews.js"></script> 
   </body>
 </html>
