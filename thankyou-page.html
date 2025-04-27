@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank you</title>
+    <link rel="stylesheet" href="./css/thanks-page.css" />
 </head>
 <body>
-    <div class="thankyou-text">
-        <h2>Дякую</h2>
-        <p>Дані отримані</p>
+  <div class="thankpage-wrapper">
+    <div class="thankyoupage-modal">
+      <div class="thanks-video-container">
+          <img src="./images/thankyou-pageimg.jpg" alt="image" class="thankyou-pageimg" width="524" height="160"> 
+          <a 
+          href="./index.html"
+          class="close-page" 
+          title="Закрити"
+          aria-label="Закрити"
+          type="button">&times;</a>
+          <button 
+          class="thankspage-playbtn"
+          type="button"
+          title="Дивитись"
+          aria-label="Дивитись">
+          <img src="./icons/thankspage-playbtn.svg" alt="icon" class="thankyou-play-imgbtn">
+          </button>
+      </div>
+      <div class="thanks-page-body">
+          <div class="thanks-title-container">
+            <h2 class="thanks-title">Thank you!</h2>
+            <p class="thanks-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+          </div>
+          <ul class="thanks-tests-container">
+             <li class="thanks-test-btn">
+              <div class="test-btn-container">
+                <img src="./icons/icon_7.svg" alt="icon" class="thanks-icon">
+                <h3 class="thanks-button-title">Який ти підприємець?</h3>
+              </div>
+              <img src="./icons/thanksuparrow.svg" alt="arrow" class="thanks-arrow">
+             </li>
+             <li class="thanks-test-btn">
+              <div class="test-btn-container">
+                <img src="./icons/icon_6.svg" alt="icon" class="thanks-icon">
+                <h3 class="thanks-button-title">Які інструменти інвестування тобі підходять?</h3>
+              </div>
+              <img src="./icons/thanksuparrow.svg" alt="arrow" class="thanks-arrow">
+             </li>
+             <li class="thanks-test-btn">
+              <div class="test-btn-container">
+                <img src="./icons/icon_1.svg" alt="icon" class="thanks-icon">
+                <h3 class="thanks-button-title">Який бізнес тобі створювати</h3>
+              </div>
+              <img src="./icons/thanksuparrow.svg" alt="arrow" class="thanks-arrow">
+             </li>
+          </ul>
+          <div class="thanks-page-actions">
+              <a 
+              href="./index.html" 
+              class="thanks-action-btn main-thanks-btn"
+              title="На Головну"
+              aria-label="На Головну">Назад на Головну</a>
+              <a 
+              href="./elements.html" 
+              class="thanks-action-btn elem-thanks-btn"
+              title="На Елементи"
+              aria-label="На Елементи">Назад на Елементи</a>
+          </div>
+      </div>
     </div>
+  </div> 
 </body>
 </html>
