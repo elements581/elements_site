@@ -26,8 +26,8 @@ export function initFormValidation() {
     
         // const url = "https://script.google.com/macros/s/AKfycbx9e-NKWpEzUVVu5C3EQ_VtUcuJQtKInYkcZn9o4vOhPOQqrrsYh3DsC5KxWI3ty-at/exec"; 
         
-        const telegramBotToken = '7331938875:AAGKlEDpePoMz8UXsNgyV5KxJkheSFq-hDo'; 
-        const chatId = '-1002552417580'; 
+        const telegramBotToken = 'BOT_TOKEN'; 
+        const chatId = 'CHAT_ID'; 
         const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
     
         const telegramBody = {
