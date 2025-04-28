@@ -24,7 +24,7 @@ export function initFormValidation() {
             }) 
         };
     
-        // const url = "https://script.google.com/macros/s/AKfycbx9e-NKWpEzUVVu5C3EQ_VtUcuJQtKInYkcZn9o4vOhPOQqrrsYh3DsC5KxWI3ty-at/exec"; 
+        // const url = "https://script.google.com"; 
         
         const telegramBotToken = 'BOT_TOKEN'; 
         const chatId = 'CHAT_ID'; 
