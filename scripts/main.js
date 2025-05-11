@@ -2,6 +2,8 @@ import { applyBlurOnScroll } from "./blurOnScroll.js";
 import { initVideoModal } from "./videoBisCard.js";
 import { initVideoReview } from "./videoReviews.js"
 import { headerDropdownOpen } from "./openHeaderDropdown.js";
+import { initFormValidation } from "./validationForm.js";
+import { initMobileMenu } from "./mobileBurgerMenu.js";
 import initializeReviewsSlider  from './reviewsSlider.js';
 import initializeFormToggle from './formToggle.js';
 
@@ -15,9 +17,8 @@ initVideoReview();
 headerDropdownOpen();
 
 document.addEventListener('DOMContentLoaded', () => {
+    initMobileMenu();
     initializeReviewsSlider();
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     initializeFormToggle();
+    initFormValidation();
 });
