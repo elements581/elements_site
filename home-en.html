@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/home-en.css" />
     <script src="./scripts/main.js" type="module" defer></script>
 </head>
 <body>
@@ -100,17 +100,14 @@
                     <img class="header__nav--button-arrow-down-en" src="./icons/arrow-down.svg" alt="arrow-down"/>
                 </button>
              </div>
-              <div class="header__nav--button">
-                <a 
-                href="https://example.com" 
-                class="header__link"
-                target="_blank"
-                rel="noopener"
-                aria-label="go over"
-                >I need
-                </a>
+              <button 
+              class="header__nav--button open-form-button"
+              aria-label="Перейти"
+              type="button"
+              aria-label="open form">
+                I Need That
                 <img class="header__nav--arrow" src="./icons/black-arrow.svg" alt="arrow" />
-               </div>
+               </button>
          </nav>
          </div>
 
@@ -123,7 +120,7 @@
             </li>
             <li class="header__products--option">
                 <img src="./icons/busines-consulting.svg" alt="Business consulting" class="product-icon" />
-                <a href="#" class="product-link" aria-label="Business consulting">
+                <a href="./modal-1-en.html" class="product-link" aria-label="Business consulting">
                     Business consulting
                 </a>
             </li>
@@ -143,10 +140,10 @@
 
          <div class="visible-mobile">
             <button 
-              class="product-section__article-btn header__mobile-button" 
+              class="product-section__article-btn header__mobile-button open-form-button" 
               type="button"
-              title="go over"
-              aria-label="go over">
+              title="open form"
+              aria-label="open form">
             <img src="./icons/black-arrow.svg" alt="" class="product-section__article-img">
             </button>
             <button 
@@ -162,26 +159,219 @@
      </div>
    </header>   
 
-   <div class="mobile__menu"></div>
+   <div class="mobile__menu">
+    <div class="burger-title">
+      <a class="mobile-logo" href="/" aria-label="Home" title="Home">
+        <img
+          class="logo__image"
+          src="./images/logo horisontal.png"
+          alt="Elements logo"
+          width="134"
+          height="45"
+        />
+      </a>
+      <button class="close-menu" type="button">&times;</button>
+    </div>
+    <div class="mobile-product">
+      <a
+        class="mobile-product-link"
+        href="/"
+        title="Home"
+        aria-label="Home"
+        >Home
+        <img
+          class="header__nav--arrow"
+          src="./icons/black-arrow.svg"
+          alt="arrow"
+        />
+      </a>
+      <div class="product-link-title">
+        <p class="link-title">Products:</p>
+        <a
+          class="mobile-product-link"
+          href="./elements.html"
+          title="Educational Program 'Elements'"
+          aria-label="Educational Program 'Elements'"
+          >Educational Program "Elements"
+          <img
+            class="header__nav--arrow"
+            src="./icons/black-arrow.svg"
+            alt="arrow"
+          />
+        </a>
+      </div>
+      <a
+        class="mobile-product-link"
+        href="./modal-1-en.html"
+        title="Business consulting"
+        aria-label="Business consulting"
+        >Business consulting
+        <img
+          class="header__nav--arrow"
+          src="./icons/black-arrow.svg"
+          alt="arrow"
+        />
+      </a>
+      <a
+        class="mobile-product-link"
+        href="./product-modal-2.html"
+        title="Production & Launch of Info Products"
+        aria-label="Production & Launch of Info Products"
+        >Production & Launch of Info Products
+        <img
+          class="header__nav--arrow"
+          src="./icons/black-arrow.svg"
+          alt="arrow"
+        />
+      </a>
+      <a
+        class="mobile-product-link"
+        href="./product-modal-3.html"
+        title="Personal Coaching with Khrystyna"
+        aria-label="Personal Coaching with Khrystyna"
+        >Personal Coaching with Khrystyna
+        <img
+          class="header__nav--arrow"
+          src="./icons/black-arrow.svg"
+          alt="arrow"
+        />
+      </a>
+    </div>
+    <div class="product-action-container">
+      <a
+        href="#hero-section"
+        class="header__nav--button mobile-button open-form-button"
+        aria-label="go on"
+        type="button"
+        >I Need That
+        <img
+          class="header__nav--arrow"
+          src="./icons/black-arrow.svg"
+          alt="arrow"
+        />
+      </a>
+      <div class="mobile-action-btn">
+        <span class="action-text">Choose a language</span>
+        <a
+          href="./index.html"
+          class="mobile-button-ua"
+          id="ua-mob"
+          type="button"
+          aria-label="Change the language"
+        >
+          <img
+            class="header__nav--button-img"
+            src="./icons/ua-flag.png"
+            alt="Flag of Ukraine"
+          />
+          UA
+        </a>
+        <a
+          href="./home-en.html"
+          class="mobile-button-en mobile-btn"
+          id="en-mob"
+          type="button"
+          aria-label="Змінити мову"
+        >
+          <img
+            class="header__nav--button-img"
+            src="./icons/flag-usa.svg"
+            alt="USA flag"
+          />
+          En
+        </a>
+      </div>
+    </div>
+    <div class="mobile-soc1al">
+      <a
+        class="mobile-social"
+        href="https://www.instagram.com/khrystyna.didukh/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+        title="Instagram"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M16 3.62695H8C5.23858 3.62695 3 5.86553 3 8.62695V16.627C3 19.3884 5.23858 
+                     21.627 8 21.627H16C18.7614 21.627 21 19.3884 21 16.627V8.62695C21 5.86553 18.7614 
+                     3.62695 16 3.62695ZM19.25 16.627C19.2445 18.4196 17.7926 19.8715 16 19.877H8C6.20735 
+                     19.8715 4.75549 18.4196 4.75 16.627V8.62695C4.75549 6.8343 6.20735 5.38244 8 
+                     5.37695H16C17.7926 5.38244 19.2445 6.8343 19.25 8.62695V16.627ZM16.75 8.87695C17.3023 
+                     8.87695 17.75 8.42923 17.75 7.87695C17.75 7.32467 17.3023 6.87695 16.75 6.87695C16.1977
+                     6.87695 15.75 7.32467 15.75 7.87695C15.75 8.42923 16.1977 8.87695 16.75 8.87695ZM12 
+                     8.12695C9.51472 8.12695 7.5 10.1417 7.5 12.627C7.5 15.1123 9.51472 17.127 12 17.127C14.4853 
+                     17.127 16.5 15.1123 16.5 12.627C16.5027 11.4327 16.0294 10.2865 15.1849 9.44203C14.3404 
+                     8.59754 13.1943 8.12429 12 8.12695ZM9.25 12.627C9.25 14.1458 10.4812 15.377 12 15.377C13.5188 
+                     15.377 14.75 14.1458 14.75 12.627C14.75 11.1082 13.5188 9.87695 12 9.87695C10.4812 9.87695 
+                     9.25 11.1082 9.25 12.627Z"
+            fill="white"
+            fill-opacity="0.7"
+          />
+        </svg>
+      </a>
+      <a
+        class="mobile-social"
+        href="https://www.linkedin.com/in/khrystynadidukh358/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Linkedin"
+        title="Linkedin"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_474_9142)">
+            <path
+              d="M19.2238 19.2291V19.2284H19.2284V12.4576C19.2284 9.14529 18.5153 6.59375 14.643 6.59375C12.7815 6.59375 11.5323 7.61529 11.0223 8.58375H10.9684V6.90298H7.29688V19.2284H11.12V13.1253C11.12 11.5184 11.4246 9.96452 13.4146 9.96452C15.3753 9.96452 15.4046 11.7984 15.4046 13.2284V19.2291H19.2238Z"
+              fill="white"
+            />
+            <path
+              d="M1.07812 6.90625H4.90582V19.2316H1.07812V6.90625Z"
+              fill="white"
+            />
+            <path
+              d="M2.98645 0.769531C1.76261 0.769531 0.769531 1.76261 0.769531 2.98645C0.769531 4.2103 1.76261 5.22415 2.98645 5.22415C4.2103 5.22415 5.20338 4.2103 5.20338 2.98645C5.20261 1.76261 4.20953 0.769531 2.98645 0.769531V0.769531Z"
+              fill="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_474_9142">
+              <rect width="20" height="20" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+  </div>
    <main>
     <section class="hero-section">
         <div class="container">
           <div class="hero-section__container">
            <div class="hero-section__wraper">
             <h1 class="hero-section__title">
-                Допомагаємо підприємцям і 
-                експертам досягати цілей та будувати  <mark class="hero-section__title--highlight">системні бізнеси.</mark>
+                We help entrepreneurs and experts achieve goals and build
+                <mark class="hero-section__title--highlight">systemic businesses</mark>
             </h1>
-          <div class="hero-section__button">
-            <a href="https://example.com" 
-            class="hero-section__button--link" 
-            target="_blank"
-            rel="noopener"
-            aria-label="Перейти" 
-            >Знайти Своє Рішення
-            </a>
+          <button 
+            class="hero-section__button open-form-button"
+            aria-label="open form"
+            type="button" 
+            >Find Your Solution
             <img class="hero-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-          </div>
+          </button>
            </div>
            <img src="./images/KrystynaDidukh.png" alt="Krystyna Didukh photo" class="hero-section__image">
           </div>
@@ -189,25 +379,25 @@
          <li class="hero-section__item">
          <article class="hero-section__card">
             <img src="./icons/elements-course.svg" alt="Елементи" class="hero-section__item-image" />
-            <p class="hero-section__item-text"> Навчальна програма "Елементи"</p>
+            <p class="hero-section__item-text">Educational Program "Elements"</p>
          </article>
         </li>
         <li class="hero-section__item">
          <article class="hero-section__card">
             <img src="./icons/busines-consulting.svg" alt="Бізнес-консалтинг" class="hero-section__item-image" />
-            <p class="hero-section__item-text">Бізнес-консалтинг</p>
+            <p class="hero-section__item-text">Business consulting</p>
          </article>
         </li>
         <li class="hero-section__item">
             <article class="hero-section__card">
                 <img src="./icons/production&launch.svg" alt="Продюсування та запуск інфопродуктів" class="hero-section__item-image" />
-                <p class="hero-section__item-text">Продюсування та запуск інфопродуктів</p>
+                <p class="hero-section__item-text">Production & Launch of Info Products</p>
             </article>
         </li>
         <li class="hero-section__item">
             <article class="hero-section__card">
                 <img src="./icons/personal-work.svg" alt="Особиста робота з Христиною" class="hero-section__item-image" />
-                <p class="hero-section__item-text">Особиста робота з Христиною</p>
+                <p class="hero-section__item-text">Personal Coaching with Khrystyna</p>
             </article>
         </li>
       </ul>
@@ -222,44 +412,186 @@
             </div>
             <div class="expert-section__text">
                 <p class="expert-section__text-about">
-                    <span class="expert-section__text-accent">Христина Дідух</span>
-                    разом з командою мають міжнародний досвід,<br>
-                    працюють з реальними кейсами та створюють результати, які<br> говорять самі за себе.
+                    <span class="expert-section__text-accent">Khrystyna Didukh</span>
+                    and her team have international experience,<br>
+                    work with real cases and create results that<br> speak for themselves.
                 </p>
                 <ul class="expert-section__list">
                     <li class="expert-section__item">
                        <img src="./icons/icon_1.svg" alt="icon" class="expert-section__item-icon"/>
-                        <p class="expert-section__list--text">13 років у бізнесі </p>
+                        <p class="expert-section__list--text">
+                            13 years in business</p>
                     </li>
                     <li class="expert-section__item">
                         <img src="./icons/icon_2.svg" alt="icon" class="expert-section__item-icon"/>
-                        <p class="expert-section__list--text">3 роки в PwC</p>
+                        <p class="expert-section__list--text">
+                            3 years at PwC</p>
                     </li>
                     <li class="expert-section__item">
                         <img src="./icons/icon_3.svg" alt="icon" class="expert-section__item-icon"/>
-                        <p class="expert-section__list--text">Представник естонської програми e-Residency (1 із 23 у світі)</p>
+                        <p class="expert-section__list--text">Representative of the Estonian e-Residency program (1 of 23 in the world)</p>
                     </li>
                     <li class="expert-section__item">
                         <img src="./icons/icon_4.svg" alt="icon" class="expert-section__item-icon"/>
-                        <p class="expert-sectio__list--text">Створила 4-у найбільшу компанію з імпорту квітів в Україні</p>
+                        <p class="expert-section__list--text">Created the 4th largest flower import company in Ukraine</p>
                     </li>
                     <li class="expert-section__item">
                         <img src="./icons/icon_5.svg" alt="icon" class="expert-section__item-icon"/>
-                        <p class="expert-sectio__list--text">Отримувала гранти на 40,000 євро від ЄС та ООН</p>
+                        <p class="expert-section__list--text">Received grants of 40,000 euros from the EU and the UN</p>
                     </li>
                     <li class="expert-section__item">
                         <img src="./icons/icon_6.svg" alt="icon" class="expert-section__item-icon"/>
-                        <p class="expert-section__list--text">Зробила 4 успішні запуски власної навчальної програми “Елементи”</p>
+                        <p class="expert-section__list--text">Made 4 successful launches of her own educational program “Elements”</p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+    <section class="publication-section" id="publication-section">
+        <h3 class="publication-title">
+            Khrystyna's publications:
+        </h3>
+        <div class="publication-container">
+          <div class="publication-row">
+            <a 
+            href="https://thursd.com/articles/brave-2-bloom-combines-the-beauty-of-flowers-with-business-to-empower-entrepreneurs" 
+            class="publication-card" 
+            target="_blank"
+            rel="noopener"
+            title="publication in Thursd" 
+            aria-label="publication in Thursd">
+              <img src="./images/publication-1.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-1.png" alt="Thursd" class="publication-logo">
+            </a>
+            <a 
+             href="https://thursd.com/florists/khrystyna-didukh" 
+             class="publication-card" 
+             target="_blank"
+             rel="noopener"
+             title="publication in Thursd" 
+             aria-label="publication in Thursd">
+              <img src="./images/publication-2.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-1.png" alt="Thursd" class="publication-logo">
+            </a>
+            <a 
+            href="https://thursd.com/articles/Khrystyna-Didukh-Flowers-Flower-Shoot-in-Floral-Trend-Color" 
+            class="publication-card" 
+            target="_blank"
+            rel="noopener"
+            title="publication in Thursd" 
+            aria-label="publication in Thursd">
+              <img src="./images/publication-3.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-1.png" alt="Thursd" class="publication-logo">
+            </a>
+            <a 
+            href="https://estonianworld.com/business/a-ukrainian-refugee-organises-a-conference-in-estonia-to-empower-women/" 
+            class="publication-card" 
+            title="publication in EstonianWorld"
+            target="_blank"
+            rel="noopener" 
+            aria-label="publication in EstonianWorld">
+              <img src="./images/publication-4.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-2.png" alt="EstonianWorld" class="publication-logo">
+            </a> 
+          </div>
+          <div class="publication-row">
+            <a 
+            href="https://www.tv3.ee/3-portaal/seltskond/naistekuu/eestlaste-sudamed-voitnud-ukraina-tulbimuuja-tahab-luua-oma-ettevotte-sain-aru-et-endine-elu-on-labi/" 
+            class="publication-card"
+            target="_blank"
+            rel="noopener"  
+            title="publication in tv3" 
+            aria-label="publication in tv3">
+              <img src="./images/publication-5.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-3.png" alt="tv3" class="publication-logo">
+            </a>
+            <a 
+            href="https://www.google.com/amp/s/rubryka.com/en/2022/03/17/flowers-for-ukraine/amp/" 
+            class="publication-card"
+            target="_blank"
+            rel="noopener"  
+            title="publication in Rubryka" 
+            aria-label="publication in Rubryka">
+              <img src="./images/publication-6.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-4.png" alt="Rubryka" class="publication-logo">
+            </a>
+            <a 
+            href="https://www.tv3.ee/3-portaal/seltskond/naistekuu/eestlaste-sudamed-voitnud-ukraina-tulbimuuja-tahab-luua-oma-ettevotte-sain-aru-et-endine-elu-on-labi/" 
+            class="publication-card" 
+            target="_blank"
+            rel="noopener" 
+            title="publication in tv3" 
+            aria-label="publication in tv3">
+              <img src="./images/publication-7.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-3.png" alt="tv3" class="publication-logo">
+            </a>
+            <a 
+            href="https://boostimpact.org/the-truckload-of-tulips-that-sparked-innovation/" 
+            class="publication-card"  
+            target="_blank"
+            rel="noopener"
+            title="publication in Boost" 
+            aria-label="publication in Boost">
+              <img src="./images/publication-8.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-5.png" alt="Boost" class="publication-logo">
+            </a> 
+          </div>
+          <div class="publication-row">
+            <a 
+            href="https://www.google.com/url?q=https://boostimpact.org/four-ukrainian-women-entrepreneurs-on-building-businesses-in-times-of-war/&sa=U&ved=2ahUKEwiczcDwvrSMAxWIRfEDHQSuNAc4KBAWegQIKRAB&usg=AOvVaw1KWH6_IMlXjlxfCj5zdfev" 
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+            title="publication in Boost" 
+            aria-label="publication in Boost">
+              <img src="./images/publication-9.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-5.png" alt="Boost" class="publication-logo">
+            </a>
+            <a 
+            href="https://aiph.org/floraculture/news/estonia-to-host-inaugural-brave-to-bloom-event-in-tallinn/ " 
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+            title="publication in AIPH" 
+            aria-label="publication in AIPH">
+              <img src="./images/publication-10.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-lolgo-6.png" alt="AIPH" class="publication-logo">
+            </a>
+            <a 
+            href="https://annestiil.delfi.ee/artikkel/120062968/ukrainlanna-khrystyna-didukh-enne-24-veebruari-oli-sona-soda-midagi-mis-parines-ajalooopikutest-ega-kuulunud-tanasesse-paeva" 
+            class="publication-card"
+            target="_blank"
+            rel="noopener"
+            title="publication in annestiil" 
+            aria-label="publication in annestiil">
+              <img src="./images/publication-11.jpg" alt="publication" class="publication-img">
+              <img src="./images/public-logo-7.png" alt="annestiil" class="publication-logo">
+            </a>
+            <a 
+            href="https://revistapegn.globo.com/google/amp/mulheres-empreendedoras/noticia/2023/03/esta-ucraniana-transformou-o-seu-negocio-em-meio-a-guerra-e-agora-quer-inspirar-outras-mulheres.ghtml" 
+            class="publication-card" 
+            target="_blank"
+            rel="noopener"
+            title="publication in в Empresas&Negocios" 
+            aria-label="publication in Empresas&Negocios">
+              <img src="./images/publication-12.png" alt="publication" class="publication-img last-image">
+              <img src="./images/public-logo-8.png" alt="Empresas&Negocios" class="publication-logo">
+            </a> 
+          </div>
+        </div>
+      </section>
     <section class="partners-section">
         <div class="container">
-            <h2 class="partners-section__title">Партнери конференції</h2>
-            <p class="partners-section__subtitle">Серед кейсів Христини - організація міжнародної конференції 
-            be brave to bloom для підприємців, стартапів, ділових людей, креативних індустрій та бізнесу.</p>
+            <div class="sections-title-container spec-section-container">
+                <h2 class="partners-section__title">Conference partners</h2>
+                <img
+                  src="./icons/arraow-after.svg"
+                  alt="icon"
+                  class="sections-title-icon"
+                />
+              </div>
+            <p class="partners-section__subtitle">Among Khrystyna's cases is the organization of the international conference 
+                be brave to bloom for entrepreneurs, startups, business people, creative industries and business.</p>
            <div class="scrolling-container">
             <ul class="partners-section__list">
                 <li class="partners-sections__item">
@@ -324,14 +656,21 @@
     </section>
     <section class="product-section">
         <div class="container">
-            <h2 class="product-section__title">Продукти</h2>
+            <div class="sections-title-container">
+                <h2 class="product-section__title">Products</h2>
+                <img
+                  src="./icons/arraow-after.svg"
+                  alt="icon"
+                  class="sections-title-icon"
+                />
+              </div>
             <ul class="product-section__list">
                 <li class="product-section__item">
                   <div class="product-section__card-container">
                         <div class="blur-background"></div>
                         <article class="product-section__article">
                             <div class="product-header-container">
-                                <h4 class="product-section__article-title">Навчальна програма "Елементи"</h4>
+                                <h4 class="product-section__article-title">Educational Program "Elements"</h4>
                                 <button class="product-section__article-btn" 
                                 type="button"
                                 title="Перейти"
@@ -340,29 +679,29 @@
                                 </button>
                                </div>
                                 <div class="product-section__number">1</div>
-                            <p class="product-section__text">Ми зібрали все найкраще від форматів наставництва, 
-                             курсу і<br> мастермайду та зробили унікальний навчальний продукт.
+                            <p class="product-section__text">We have collected all the best from mentoring, 
+                                course and masterclass formats and created a unique educational product.
                             </p>
                         
                            <div class="product-section__hover-content">
                             <div class="header-hover-container">
-                                <h4 class="product-section__article-title">Навчальна програма "Елементи"</h4>
+                                <h4 class="product-section__article-title">Educational Program "Elements"</h4>
                             <button 
                             class="product-section__hover-btn" 
                             type="button"
                             title="Перейти"
-                            aria-label="Перейти">Дізнатися більше
+                            aria-label="Перейти">Learn more
                             <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
                             </button>
                             </div>
                             <div class="product-section__hover-text">
-                                <h5>Які результати ви отримаєте:</h5>
+                                <h5>What results will you get:</h5>
                                 <ul class="hover-text-list">
-                                    <li>збільшення доходу мінімум х2</li>
-                                    <li>старт бізнесу або безпечний перехід з найму в бізнес</li>
-                                    <li>розвиток власної справи та масштабування</li>
-                                    <li>запуск нових продуктів (товарів чи послуг)</li>
-                                    <li>збір «своєї» команди та стандартизація бізнесу</li>
+                                    <li>increase in income at least x2</li>
+                                    <li>starting a business or a safe transition from employment to business</li>
+                                    <li>developing your own business and scaling it</li>
+                                    <li>launching new products (goods or services)</li>
+                                    <li>gathering "your" team and standardizing the business</li>
                                 </ul>
                             </div>
                          </div>
@@ -374,7 +713,7 @@
                         <div class="blur-background"></div>
                          <article class="product-section__article">
                           <div class="product-header-container">
-                               <h4 class="product-section__article-title">Бізнес-<br>консалтинг</h4>
+                               <h4 class="product-section__article-title">Business consulting</h4>
                                <button class="product-section__article-btn" 
                                type="button"
                                title="Перейти"
@@ -383,28 +722,28 @@
                                </button>
                               </div>
                                <div class="product-section__number">2</div>
-                           <p class="product-section__text">Створюємо таку систему, яка дозволить Вам масштабувати<br> бізнес 
-                               без втрат у якості, у часі та без стресу.
+                           <p class="product-section__text">We create a system that will allow you to scale your business without loss of quality, time, and stress.
                            </p>
                       
                            <div class="product-section__hover-content">
                                <div class="header-hover-container">
-                                   <h4 class="product-section__article-title">Бізнес-<br>консалтинг</h4>
-                                   <button 
-                                   class="product-section__hover-btn" 
+                                   <h4 class="product-section__article-title">Business consulting</h4>
+                                   <a 
+                                   href="./modal-1-en.html"
+                                   class="product-section__hover-btn"
                                    type="button"
-                                   title="Перейти"
-                                   aria-label="Перейти">Дізнатися більше
+                                   title="go on"
+                                   aria-label="go on">Learn more
                                    <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
-                                    </button> 
+                                  </a> 
                                </div>
                            <div class="product-section__hover-text">
-                               <h5>Які результати ви отримаєте:</h5>
+                               <h5>What results will you get:</h5>
                            <ul class="hover-text-list">
-                               <li>сайт, що відображає вашу експертизу та підвищує конверсії.</li>
-                               <li>автоматизовані процеси залучення та взаємодії з аудиторією</li>
-                               <li> методологію курсу</li>
-                               <li>сценарії прогрівів</li>
+                               <li>a site that reflects your expertise and increases conversions.</li>
+                               <li>automated processes of engagement and interaction with the audience</li>
+                               <li>course methodology</li>
+                               <li>warm-up scripts</li>
                            </ul>
                        </div>
                        </div>
@@ -416,7 +755,7 @@
                         <div class="blur-background"></div>
                         <article class="product-section__article">
                            <div class="product-header-container">
-                            <h4 class="product-section__article-title">Продюсування та запуск інфопродуктів</h4>
+                            <h4 class="product-section__article-title">Production & Launch of Info Products</h4>
                             <button class="product-section__article-btn" 
                             type="button"
                             title="Перейти"
@@ -425,30 +764,31 @@
                             </button>
                            </div>
                             <div class="product-section__number">3</div>
-                        <p class="product-section__text">Допомагаємо експертам, блогерам і медійним особам<br> упакувати 
-                        експертизу в якісний та прибутковий продукт.
+                        <p class="product-section__text">We help experts, bloggers and media personalities package their expertise into a high-quality and profitable product.
                         </p>
                        
                         <div class="product-section__hover-content">
                            <div class="header-hover-container">
-                            <h4 class="product-section__article-title">Продюсування та запуск інфопродуктів</h4>
+                            <h4 class="product-section__article-title">Production & Launch of Info Products</h4>
                             <button 
                             class="product-section__hover-btn" 
                             type="button"
                             title="Перейти"
-                            aria-label="Перейти">Дізнатися більше
+                            aria-label="Перейти">Learn more
                             <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
                             </button>
                            </div>
                             <div class="product-section__hover-text">
-                                <h5>Які результати ви отримаєте:</h5>
+                                <h5>What results will you get:</h5>
                                 <ul class="hover-text-list" >
-                                    <li>більш здорове, щасливе й наповнене життя (і так, це самодостатня ціль)</li>
-                                    <li>  старт бізнесу або безпечний перехід з найму у власну справу</li>
-                                    <li> розвиток власної справи: порозумієтесь з цифрами в бізнесі,<br> 
-                                        зможете впливати на потік клієнтів, оволодієте практичними інструментами</li>
-                                    <li>збір "своєї" команди, стандартизація процесів, що працюють у системі</li>
-                                    <li> І це ще не все! Навіть є медитації. Так-так, поруч із бізнес-моделями</li>
+                                    <li>a healthier, happier, and more fulfilled life (and yes, that's a goal in itself)</li>
+                                    <li>
+                                        starting a business or a safe transition from employment to own business</li>
+                                    <li>
+                                        development of your own business: you will understand numbers in business,
+                                        be able to influence the flow of customers, and master practical tools</li>
+                                    <li>gathering "your" team, standardizing the processes operating in the system</li>
+                                    <li>And that's not all! There are even meditations. Yes, right next to business models</li>
                                 </ul>
                             </div>
                         </div>
@@ -460,7 +800,7 @@
                         <div class="blur-background"></div>
                         <article class="product-section__article">
                             <div class="product-header-container">
-                                <h4 class="product-section__article-title">Особиста робота з Христиною</h4>
+                                <h4 class="product-section__article-title">Personal Coaching with Khrystyna</h4>
                             <button 
                             class="product-section__article-btn" 
                             type="button"
@@ -470,28 +810,28 @@
                             </button>
                             </div>
                             <div class="product-section__number">4</div>
-                        <p class="product-section__text">Хочете максимального фокусу на вашому бізнесі?<br> 
-                            Працюємо над вашим запитом у форматі наставництва.
+                        <p class="product-section__text">
+                            Do you want maximum focus on your business? We are working on your request in a mentoring format.
                         </p>
     
                         <div class="product-section__hover-content">
                                 <div class="header-hover-container">
-                                <h4 class="product-section__article-title">Особиста робота з Христиною</h4>
+                                <h4 class="product-section__article-title">Personal Coaching with Khrystyna</h4>
                                 <button 
                                 class="product-section__hover-btn" 
                                 type="button"
                                 title="Перейти"
-                                aria-label="Перейти">Дізнатися більше
+                                aria-label="Перейти">Learn more
                                 <img class="product-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow"/>
                                 </button>
                                 </div>
                             <div class="product-section__hover-text">
-                                <h5>Які результати ви отримаєте:</h5>
+                                <h5>What results will you get:</h5>
                             <ul class="hover-text-list">
-                                <li>X2-X5 зростання доходів</li>
-                                <li>системність</li>
-                                <li>швидкість</li>
-                                <li>підтримку у прийнятті ключових рішень</li>
+                                <li>X2-X5 revenue growth</li>
+                                <li>systematicity</li>
+                                <li>speed</li>
+                                <li>support in making key decisions</li>
                             </ul>
                            </div>
                         </div>
@@ -499,48 +839,222 @@
                   </div>
                 </li>
             </ul>
+            <ul class="product-mobile-list">
+                <li class="mobile-item">
+                  <div class="product-mobile-container">
+                    <div class="mobile-number">1</div>
+                    <h4 class="product-mobile__article-title">
+                        Educational Program "Elements"
+                    </h4>
+                    <a
+                      href="./elements.html"
+                      class="product-section__hover-btn product-mobile-btn"
+                      type="button"
+                      title="Перейти"
+                      aria-label="Перейти"
+                      >Learn more
+                      <img
+                        class="product-section__button--arrow"
+                        src="./icons/black-arrow.svg"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-section__mobile-text">
+                    <h5>What results will you get:</h5>
+                    <ul class="mobile-text-list">
+                        <li>increase in income at least x2</li>
+                        <li>starting a business or a safe transition from employment to business</li>
+                        <li>developing your own business and scaling it</li>
+                        <li>launching new products (goods or services)</li>
+                        <li>gathering "your" team and standardizing the business</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-item">
+                  <div class="product-mobile-container">
+                    <div class="mobile-number">2</div>
+                    <h4 class="product-mobile__article-title">
+                        Business consulting
+                    </h4>
+                    <a
+                      href="./modal-1-en.html"
+                      class="product-section__hover-btn product-mobile-btn"
+                      type="button"
+                      title="go on"
+                      aria-label="go on"
+                      >Learn more
+                      <img
+                        class="product-section__button--arrow"
+                        src="./icons/black-arrow.svg"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-section__mobile-text">
+                    <h5>What results will you get:</h5>
+                    <ul class="mobile-text-list">
+                        <li>a site that reflects your expertise and increases conversions.</li>
+                        <li>automated processes of engagement and interaction with the audience</li>
+                        <li>course methodology</li>
+                        <li>warm-up scripts</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-item">
+                  <div class="product-mobile-container">
+                    <div class="mobile-number">3</div>
+                    <h4 class="product-mobile__article-title">
+                        Production & Launch of Info Products
+                    </h4>
+                    <a
+                      href="./product-modal-2.html"
+                      class="product-section__hover-btn product-mobile-btn"
+                      type="button"
+                      title="Перейти"
+                      aria-label="Перейти"
+                      >Learn more
+                      <img
+                        class="product-section__button--arrow"
+                        src="./icons/black-arrow.svg"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-section__mobile-text">
+                    <h5>What results will you get:</h5>
+                    <ul class="mobile-text-list">
+                        <li>a healthier, happier, and more fulfilled life (and yes, that's a goal in itself)</li>
+                        <li>
+                            starting a business or a safe transition from employment to own business</li>
+                        <li>
+                            development of your own business: you will understand numbers in business,
+                            be able to influence the flow of customers, and master practical tools</li>
+                        <li>gathering "your" team, standardizing the processes operating in the system</li>
+                        <li>And that's not all! There are even meditations. Yes, right next to business models</li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="mobile-item">
+                  <div class="product-mobile-container">
+                    <div class="mobile-number">4</div>
+                    <h4 class="product-mobile__article-title">
+                        Personal Coaching with Khrystyna
+                    </h4>
+                    <a
+                      href="./product-modal-3.html"
+                      class="product-section__hover-btn product-mobile-btn"
+                      type="button"
+                      title="Перейти"
+                      aria-label="Перейти"
+                      >Learn more
+                      <img
+                        class="product-section__button--arrow"
+                        src="./icons/black-arrow.svg"
+                        alt="arrow"
+                      />
+                    </a>
+                  </div>
+                  <div class="product-section__mobile-text">
+                    <h5>What results will you get:</h5>
+                    <ul class="mobile-text-list">
+                        <li>X2-X5 revenue growth</li>
+                        <li>systematicity</li>
+                        <li>speed</li>
+                        <li>support in making key decisions</li>
+                      <li>
+                        And that's not all! There are even meditations. Yes, right next to business models
+                      </li>
+                      <li>unlimited access to Knowledge Base lectures</li>
+                      <li class="product-last-item">
+                        supportive environment of like-minded people
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
         </div>
     </section>
-    <section class="diagnostics-section">
-        <div class="container">
-         <div class="diagnostic-section_container">
-            <article class="diagnostic-section__card">
-                <h2 class="diagnostic-section__card-title">Отримай безкоштовну діагностику</h2>
-                <p class="diagnostic-section__card-text">Можливість зафіксувати найнижчу ціну на будь-який з трьох тарифів
-                 Елементів за 99€. Сума, яку ви оплачуєте, мінусується з фінальної
-                  вартості і дозволяє не хвилюватись щодо зростання ціни.</p>
-                  <div class="diagnostic-section__button">
-                    <a 
-                    href="https://example.com" 
-                    class="diagnostic-section__button--link" 
-                    target="_blank" 
-                    rel="noopener" 
-                    aria-label="Перейти"
-                    >Залишити Заявку
-                    <img class="diagnostic-section__button--arrow" src="./icons/black-arrow.svg" alt="arrow">
-                </a>
+    <section class="diagnostics-section" id="diagnostics-section">
+        <div class="diagnostic-section_container">
+          <article class="diagnostic-section__card">
+            <video autoplay muted loop class="diagnostic-section-video">
+                   <source src="./video/teacher-bg.mp4" type="video/mp4">
+                   Ваш браузер не підтримує відео.
+               </video>
+               <div class="diagnostic-overlay"></div>
+            <h2 class="diagnostic-section__card-title">
+              Get a free diagnosis
+            </h2>
+            <p class="diagnostic-section__card-text">
+            The ability to lock in the lowest price on any of the three Element plans for €99. 
+            The amount you pay is deducted from the final cost, so you don't have to worry about 
+            price increases.
+            </p>
+            <button
+              class="diagnostic-section__button open-form-button"
+              type="button"
+              aria-label="Перейти"
+            >Leave an application
+              <img
+                class="diagnostic-section__button--arrow"
+                src="./icons/black-arrow.svg"
+                alt="arrow"
+              />
+            </button>
+          </article>
+          <article class="diagnostic-section__videocard">
+            <img
+              src="./images/Khris_diagnostic.png"
+              alt="Khrystyna photo"
+              class="diagnostic-section__videocard-img"
+            />
+            <img
+              src="./images/Khris_diagnostic-mobile.png"
+              alt="Khrystyna photo"
+              class="diagnostic-mobile__videocard-img"
+            />
+            <div
+              class="dianostic-section__videocard-playbutton"
+              id="play-button"
+            >
+              <img
+                src="./images/play-button.png"
+                alt="дивитись"
+                class="dianostic-section__videocard-playicon"
+              />
+              <span class="dianostic-section__videocard-buttontext"
+                >View Video</span
+              >
             </div>
-        </article>
-        <article class="diagnostic-section__videocard">
-            <img src="./images/Khris_diagnostic.png" alt="" class="diagnostic-section__videocard-img">
-            <div class="dianostic-section__videocard-container">
-                <div class="dianostic-section__videocard-playbutton" id="play-button">
-                    <img src="./images/play-button.png" alt="дивитись" class="dianostic-sectgion__videocard-playicon">
-                    <span class="dianostic-section__videocard-buttontext">Відео-візитівка</span>
-                </div>
-                <div class="modal" id="video-modal" style="display: none;">
-                    <span class="close" id="close-button">&times;</span>
-                    <video class="modal-video" id="modal-video" controls>
-                        <source src="./video/video-vizutivka.MOV" type="video/mp4">
-                        Ваш браузер не підтримує відео.
-                    </video>
-                </div>
+            <div class="modal" id="video-modal" style="display: none">
+              <span class="close" id="close-button">&times;</span>
+              <video class="modal-video" id="modal-video" controls>
+                <source src="./video/KhrisVideo-Vizutivka.MOV" type="video/mp4" />
+                Your browser does not support video.
+              </video>
             </div>
-            </div>
-        </article>
-         </div>
+          </article>
         </div>
-    </section>
+        <div class="tests-container">
+          <h3 class="tests-title">Or Take the test and find out...</h3>
+          <div class="tests">
+            <div class="test-card test-1">
+              <img src="./icons/icon_7.svg" class="test-icon" alt="icon">
+              <h4 class="test-name">What kind of entrepreneur are you?</h4>
+            </div>
+            <div class="test-card test-2">
+              <img src="./icons/icon_6.svg" class="test-icon" alt="icon">
+              <h4 class="test-name">What investment tools are right for you?</h4>
+            </div>
+            <div class="test-card test-3">
+              <img src="./icons/icon_1.svg" class="test-icon" alt="icon">
+              <h4 class="test-name">
+                What kind of business should you create?</h4>
+            </div>
+          </div>
+        </div>
+      </section>
     <section class="faq-section" id="faq-section">
         <div class="container">
          <div class="faq_section__container">
@@ -578,7 +1092,7 @@
                 </p>
             </details>
             <details name="faq">
-                <summary>4. How do I know if production services<br> are right for me?
+                <summary>4. How do I know if production services are right for me?
                     <img class="" src="./icons/arrow-down.svg" alt="arrow-down"/> 
                 </summary>
                 <p>If you're an expert, blogger, or media personality looking to create an 
@@ -588,7 +1102,7 @@
                </p>
             </details>
             <details name="faq">
-                <summary>5. Can I participate if I don't have a<br> business yet?
+                <summary>5. Can I participate if I don't have a business yet?
                     <img class="" src="./icons/arrow-down.svg" alt="arrow-down"/>
                 </summary>
                 <p>Yes, absolutely! The "Elements" program is designed to assist those 
@@ -608,7 +1122,7 @@
                 </p>
             </details>
             <details name="faq">
-                <summary>7. What if I’m unsure which service is<br> the best fit for me?
+                <summary>7. What if I’m unsure which service is the best fit for me?
                     <img class="" src="./icons/arrow-down.svg" alt="arrow-down"/>
                 </summary>
                 <p>Fill out the consultation form, and our manager will help guide you in<br> 
@@ -637,7 +1151,7 @@
                                 </a>
                             </div>
                             <div class="bonus-section__number">1</div>
-                            <h3 class="bonus-section__card-title">Отримай безкоштовні матеріали</h3>
+                            <h3 class="bonus-section__card-title">Get free materials</h3>
             
                        <div class="bonus-section__hover-content-1">
                         <div class="bonus-section__card-btn">
@@ -650,20 +1164,20 @@
                                 <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
                             </a>
                         </div>
-                        <h3 class="bonus-section__hover-title">Отримай безкоштовні матеріали</h3>
-                        <h5 class="bonus-section__hover-subtitle">Забирайте корисні матеріали, які допоможуть вам:</h5>
-                        <p class="bonus-section__hover-text">визначити нішу</p>
-                        <p class="bonus-section__hover-text">покращити продажі</p>
-                        <p class="bonus-section__hover-text">масштабувати бізнес</p>
-                        <p class="bonus-section__hover-text">Зробіть перший крок до впевненого ведення бізнесу та фінансового зростання.
-                             Почніть діяти вже зараз!</p>
+                        <h3 class="bonus-section__hover-title">Get free materials</h3>
+                        <h5 class="bonus-section__hover-subtitle">Pick up useful materials that will help you:</h5>
+                        <p class="bonus-section__hover-text">define a niche</p>
+                        <p class="bonus-section__hover-text">improve sales</p>
+                        <p class="bonus-section__hover-text">scale the business</p>
+                        <p class="bonus-section__hover-text">Take the first step towards confident business and financial growth.
+                        Start acting now!</p>
                         <div class="bonus-section__hover-btn">
                             <a 
                                 href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite" 
                                 class="bonus-link" 
                                 target="_blank" 
                                 rel="noopener" 
-                                aria-label="Перейти">Залишити Заявку 🔥
+                                aria-label="Перейти">Leave an application 🔥
                             </a>
                         </div>
                       </div>
@@ -685,7 +1199,7 @@
                        </a>  
                     </div>
                    <div class="bonus-section__number">2</div>
-                    <h3 class="bonus-section__card-title">Взламай свою дофамінову систему</h3>
+                    <h3 class="bonus-section__card-title">Hack your dopamine system</h3>
     
                     <div class="bonus-section__hover-content-2">
                         <div class="bonus-section__card-btn">
@@ -699,12 +1213,12 @@
                             <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
                            </a>  
                         </div>
-                        <h3 class="bonus-section__hover-title">Взламай<br> свою дофамінову<br> систему</h3>
-                        <h5 class="bonus-section__hover-subtitle">Поєднайте задоволення від власних результатів
-                             із використанням сучасних технологій!</h5>
-                        <p class="bonus-section__hover-text">переходьте у дофамін-бот</p>
-                        <p class="bonus-section__hover-text">ставте конкретні цілі</p>
-                        <p class="bonus-section__hover-text"> отримуйте заряд мотивації та винагороду за прогрес</p>
+                        <h3 class="bonus-section__hover-title">Hack your dopamine system</h3>
+                        <h5 class="bonus-section__hover-subtitle">
+                            Combine the pleasure of your own results with the use of modern technologies!</h5>
+                        <p class="bonus-section__hover-text">go to dopamine bot</p>
+                        <p class="bonus-section__hover-text">set specific goals</p>
+                        <p class="bonus-section__hover-text">get a boost of motivation and rewards for progress</p>
                             <div class="bonus-section__hover-btn">
                                 <a 
                                 href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite" 
@@ -712,7 +1226,7 @@
                                 target="_blank" 
                                 rel="noopener" 
                                 aria-label="Перейти"
-                                >Залишити Заявку 🔥
+                                >Leave an application 🔥
                                </a>  
                            </div>   
                     </div>
@@ -734,7 +1248,7 @@
                        </a>  
                    </div>
                    <div class="bonus-section__number">3</div>
-                    <h3 class="bonus-section__card-title">Почни працювати по спринтах вже зараз!</h3>
+                    <h3 class="bonus-section__card-title">Start working on sprints now!</h3>
     
                     <div class="bonus-section__hover-content-3">
                         <div class="bonus-section__card-btn">
@@ -748,13 +1262,13 @@
                             <img src="./icons/black-arrow.svg" alt="" class="bonus-section__article-img">
                            </a>  
                            </div>
-                        <h3 class="bonus-section__hover-title">Почни працювати<br> по спринтах<br> вже зараз!</h3>
-                        <h5 class="bonus-section__hover-subtitle">Досягайте бізнес-цілі легко! Як? Працюючи по спринтах!
-                            Допоможе наш спринт-бот</h5>
-                        <p class="bonus-section__hover-text">Поставте ціль на тиждень</p>
-                        <p class="bonus-section__hover-text">Оберіть ключові показники досягнення цілі</p>
-                        <p class="bonus-section__hover-text">В кінці тижня бот запитає вас про результат</p>
-                        <p class="bonus-section__hover-text">Регулярна звітність на 70% збільшує вірогідність досягнення цілі</p>
+                        <h3 class="bonus-section__hover-title">Start working on sprints now!</h3>
+                        <h5 class="bonus-section__hover-subtitle">Achieve your business goals easily! How? By working in sprints!
+                            Our sprint bot will help</h5>
+                        <p class="bonus-section__hover-text">Set a goal for the week</p>
+                        <p class="bonus-section__hover-text">Choose key indicators for achieving the goal</p>
+                        <p class="bonus-section__hover-text">At the end of the week, the bot will ask you about the result</p>
+                        <p class="bonus-section__hover-text">Regular reporting increases the likelihood of achieving the goal by 70%.</p>
                             <div class="bonus-section__hover-btn">
                                 <a 
                                 href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite" 
@@ -762,7 +1276,7 @@
                                 target="_blank" 
                                 rel="noopener" 
                                 aria-label="Перейти"
-                                >Залишити Заявку 🔥
+                                >Leave an application 🔥
                                </a>
                            </div> 
                     </div> 
@@ -770,311 +1284,370 @@
             </article>
           </li>
          </ul>
+         <ul class="bonus-visible-mobile">
+            <li class="bonus-visible-item bonus-item-1">
+              <div class="bonus-section__card-btn">
+                <a
+                  href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite"
+                  class="rounded-button"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Перейти"
+                >
+                  <img
+                    src="./icons/black-arrow.svg"
+                    alt=""
+                    class="bonus-section__article-img"
+                  />
+                </a>
+              </div>
+              <h3 class="bonus-section__hover-title">
+                Get free materials
+              </h3>
+              <h5 class="bonus-section__hover-subtitle">
+                Pick up useful materials that will help you:
+              </h5>
+               <p class="bonus-section__hover-text">define a niche</p>
+               <p class="bonus-section__hover-text">improve sales</p>
+               <p class="bonus-section__hover-text">scale the business</p>
+               <p class="bonus-section__hover-text">Take the first step towards confident business and financial growth.
+               Start acting now!
+               </p>
+              <div class="bonus-section__hover-btn">
+                <a
+                  href="https://tg.pulse.is/TransformationKD_bot?start=67290abcffec14f55a00bd55|utm_source=newSite"
+                  class="bonus-link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Перейти"
+                  >Leave an application 🔥
+                </a>
+              </div>
+            </li>
+            <li class="bonus-visible-item bonus-item-2">
+              <div class="bonus-section__card-btn">
+                <a
+                  href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite"
+                  class="rounded-button"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Перейти"
+                >
+                  <img
+                    src="./icons/black-arrow.svg"
+                    alt=""
+                    class="bonus-section__article-img"
+                  />
+                </a>
+              </div>
+              <h3 class="bonus-section__hover-title">
+                Hack your dopamine system
+              </h3>
+              <h5 class="bonus-section__hover-subtitle">
+                Combine the pleasure of your own results with the use of modern technologies!
+              </h5>
+              <p class="bonus-section__hover-text">go to dopamine bot</p>
+              <p class="bonus-section__hover-text">set specific goals</p>
+              <p class="bonus-section__hover-text">get a boost of motivation and rewards for progress</p>
+              <div class="bonus-section__hover-btn">
+                <a
+                  href="https://tg.pulse.is/dofaminElements_bot?start=66ed7c6672846f9362066629|utm_source=newSite"
+                  class="bonus-link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Перейти"
+                  >Leave an application 🔥
+                </a>
+              </div>
+            </li>
+            <li class="bonus-visible-item bonus-item-3">
+              <div class="bonus-section__card-btn">
+                <a
+                  href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite"
+                  class="rounded-button"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Перейти"
+                >
+                  <img
+                    src="./icons/black-arrow.svg"
+                    alt=""
+                    class="bonus-section__article-img"
+                  />
+                </a>
+              </div>
+              <h3 class="bonus-section__hover-title hover-title-3">
+                Start working on sprints now!
+              </h3>
+              <h5 class="bonus-section__hover-subtitle">
+                Achieve your business goals easily! How? By working in sprints!
+                Our sprint bot will help
+              </h5>
+              <p class="bonus-section__hover-text">Set a goal for the week</p>
+              <p class="bonus-section__hover-text">Choose key indicators for achieving the goal</p>
+              <p class="bonus-section__hover-text">At the end of the week, the bot will ask you about the result</p>
+              <p class="bonus-section__hover-text">Regular reporting increases the likelihood of achieving the goal by 70%.</p>
+              <div class="bonus-section__hover-btn">
+                <a
+                  href="https://tg.pulse.is/elements_sprint_bot?start=66d71c90ac175de32b035c68|utm_source=newSite"
+                  class="bonus-link"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Перейти"
+                  >Leave an application 🔥
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
     </section>
     <section class="reviews-section">
       <div class="container">
-        <h2 class="reviews-section__title">У кого вже вийшло</h2>
+        <div class="sections-title-container spec-section-container">
+            <h2 class="reviews-section__title">Who could</h2>
+            <img
+              src="./icons/arraow-after.svg"
+              alt="icon"
+              class="sections-title-icon"
+            />
+          </div>
         <ul class="reviews-section__list">
             <li class="reviews-section__item">
                 <article class="reviews-section__card is-active">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Оленка</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
+                  <div class="reviews-section__card-title">
+                    <img
+                      class="reviews-image"
+                      src="./images/olenaKravets.png"
+                      alt="фото Олени"
+                    />
+                    <div class="reviews__title-container">
+                      <h5>Olena Kravets</h5>
+                      <p>Course “Elements”</p>
                     </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton" id="playButton">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <video class="reviews-video" id="myVideo" preload="metadata">
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
+                  </div>
+                  <p class="reviews-text">
+                    Я купую курси, як дурна, ви просто не розумієте скільки в мене непророблених курсів.
+                    Робота з Христиною для тих, хто хоче почути свої ідеї = почути себе
+                  </p>
+                  <div class="reviews-section__videocard-container">
+                    <div
+                      class="reviews-section__videocard-playbutton play-btn"
+                    >
+                      <img
+                        src="./images/play-button.png"
+                        alt="дивитись"
+                        class="reviews-section__videocard-playicon"
+                      />
+                      <span class="reviews-section__videocard-buttontext"
+                        >Video-review</span
+                      >
                     </div>
+                    <div class="modal reviews-video-modals" style="display: none">
+                      <span class="close close-btn">&times;</span>
+                      <video class="reviews-modal-video" controls>
+                        <source src="./video/KravetsOlena_vidgykFull.MP4" type="video/mp4" />
+                        Your browser does not support video.
+                      </video>
+                    </div>
+                  </div>
                 </article>
-            </li>
-            <li class="reviews-section__item">
+              </li>
+              <li class="reviews-section__item">
                 <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/KatyaKir.jpg" alt="фото Каті">
-                      <div class="reviews__title-container">
-                        <h5>Катя</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
+                  <div class="reviews-section__card-title">
+                    <img
+                      class="reviews-image"
+                      src="./images/katyakirkupolo.png"
+                      alt="фото Каті"
+                    />
+                    <div class="reviews__title-container">
+                      <h5>Kateryna Kirkopulo</h5>
+                      <p>Course “Elements”</p>
                     </div>
-                    <p class="reviews-text">Привіт ще раз!
-                        Уяви мій дохід за попередній міс зріс на 4к
-                        дол! Бухгалтер дзвонить просить у відпустки дівчат почати відправляти
-                         щоб ліміти не перевищити на кінець року
-                        Юхууу 4к! Це ноу ріал!
-                        Світла немає / тел розряжається але я мала тобі це написати 
-                    </p>
-                     <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton" id="playButton">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <video class="reviews-video" id="myVideo" preload="metadata">
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
+                  </div>
+                  <p class="reviews-text">
+                    Якщо чесно, на Елементи я йшла з «мінусом» на картці. 
+                    Я звичайно сподівалась відбити навчання, але все сталось 
+                    навіть в більшому обсязі (десь х2 до витраченої суми)
+                  </p>
+                  <div class="reviews-section__videocard-container">
+                    <div
+                      class="reviews-section__videocard-playbutton play-btn"
+                    >
+                      <img
+                        src="./images/play-button.png"
+                        alt="дивитись"
+                        class="reviews-section__videocard-playicon"
+                      />
+                      <span class="reviews-section__videocard-buttontext"
+                        >Video-review</span
+                      >
                     </div>
+                    <div class="modal reviews-video-modals" style="display: none">
+                      <span class="close close-btn">&times;</span>
+                      <video class="reviews-modal-video" controls>
+                        <source
+                          src="./video/Katya_videoReviews.MOV"
+                          type="video/mp4"
+                        />
+                        Your browser does not support video.
+                      </video>
+                    </div>
+                  </div>
                 </article>
-            </li>
-            <li class="reviews-section__item">
+              </li>
+              <li class="reviews-section__item">
                 <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Ольга</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
+                  <div class="reviews-section__card-title">
+                    <img
+                      class="reviews-image"
+                      src="./images/olgaaleynikova.png"
+                      alt="фото Ольги"
+                    />
+                    <div class="reviews__title-container">
+                      <h5>Olga Aleinikova</h5>
+                      <p>Course “Elements”</p>
                     </div>
-                    <p class="reviews-text">Привіт)
-                        Твір. Творча робота на тему:
-                        Як я провела весну, літо т осінь я не те щоб я хотіла змін,
-                        щось оце робити, які всі хопла «чарівного копняка», та думала
-                        одразу все вийде.
-                        Але не все і не одразу, треба геть все міняти в своїй голові, 
-                        та Елементи це саме те місце, де не страшно помилитися, де є уроки
-                        в запису, котрі я, доречі, втретс передивляюся, та в новому стані ...
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton" id="playButton">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <video class="reviews-video" id="myVideo" preload="metadata">
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
+                  </div>
+                  <p class="reviews-text">
+                    Я розклала все по поличках, змогла скласти картину як мені діяти,
+                     розвиватися далі і зараз я рухаюсь в цьому напрямку. Атмосфера на Елементах - 
+                     окреме задоволення.
+                  </p>
+                  <div class="reviews-section__videocard-container">
+                    <div
+                      class="reviews-section__videocard-playbutton play-btn"
+                    >
+                      <img
+                        src="./images/play-button.png"
+                        alt="дивитись"
+                        class="reviews-section__videocard-playicon"
+                      />
+                      <span class="reviews-section__videocard-buttontext"
+                        >Video-review</span
+                      >
                     </div>
+                    <div class="modal reviews-video-modals" style="display: none">
+                      <span class="close close-btn">&times;</span>
+                      <video class="reviews-modal-video" controls>
+                        <source src="./video/OlgaAleynykova.MP4" type="video/mp4" />
+                        Your browser does not support video.
+                      </video>
+                    </div>
+                  </div>
                 </article>
-            </li>
-            <li class="reviews-section__item">
+              </li>
+              <li class="reviews-section__item">
                 <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Наталя</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
+                  <div class="reviews-section__card-title">
+                    <img
+                      class="reviews-image"
+                      src="./images/olgashashkova.png"
+                      alt="фото Ольги"
+                    />
+                    <div class="reviews__title-container">
+                      <h5>Olha Shashkova</h5>
+                      <p>Course “Elements”</p>
                     </div>
-                    <p class="reviews-text" >Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton" id="playButton">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <video class="reviews-video" id="myVideo" preload="metadata">
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
+                  </div>
+                  <p class="reviews-text reviews-text-4">
+                    Я прийшла з запитом відкриття пекарні в Чикаго. 
+                    В мене була тільки ідея, але не було ніякого бачення, бізнес-плану. 
+                    Однозначно Елементи потрібні для кожного підприємця, для того, хто 
+                    хоче розвивати свій бізнес, переходити на нові рівні
+                  </p>
+                  <div class="reviews-section__videocard-container">
+                    <div
+                      class="reviews-section__videocard-playbutton play-btn"
+                    >
+                      <img
+                        src="./images/play-button.png"
+                        alt="дивитись"
+                        class="reviews-section__videocard-playicon"
+                      />
+                      <span class="reviews-section__videocard-buttontext"
+                        >Video-review</span
+                      >
                     </div>
+                    <div class="modal reviews-video-modals" style="display: none">
+                      <span class="close close-btn">&times;</span>
+                      <video class="reviews-modal-video" controls>
+                        <source src="./video/olgashaskova.MOV" type="video/mp4" />
+                        Your browser does not support video.
+                      </video>
+                    </div>
+                  </div>
                 </article>
-            </li>
-            <li class="reviews-section__item">
+              </li>
+              <li class="reviews-section__item">
                 <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Оксана</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
+                  <div class="reviews-section__card-title reviews-section__card-title-5">
+                    <img
+                      class="reviews-image"
+                      src="./images/olenakusil.png"
+                      alt="фото Олени"
+                    />
+                    <div class="reviews__title-container">
+                      <h5>Olena Kysil</h5>
+                      <p>Course “Elements”</p>
                     </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton" id="playButton">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <video class="reviews-video" id="myVideo" preload="metadata">
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
+                  </div>
+                  <p class="reviews-text reviews-text-5">
+                    Я прийшла в Елементи за власним «бустом». 
+                    Для мене це місце, простір, де можна зібрати базу знань,
+                   отримати оточення тих, з ким можна побрейнштормити, від 
+                   кого насичуєшся і отримуєш підтримку. Підхід Христини - 
+                   індивідуальний- це мікс практик емоційних, ментальних, 
+                   інтелектуальних; все це дає можливість вирощувати внутрішню опору
+                  </p>
+                  <div class="reviews-section__videocard-container">
+                    <div
+                      class="reviews-section__videocard-playbutton play-btn"
+                    >
+                      <img
+                        src="./images/play-button.png"
+                        alt="дивитись"
+                        class="reviews-section__videocard-playicon"
+                      />
+                      <span class="reviews-section__videocard-buttontext"
+                        >Video-review</span
+                      >
                     </div>
+                    <div class="modal reviews-video-modals" style="display: none">
+                      <span class="close close-btn">&times;</span>
+                      <video class="reviews-modal-video video-5" controls>
+                        <source src="./video/olenakusil.mp4" type="video/mp4" />
+                        Your browser does not support video.
+                      </video>
+                    </div>
+                  </div>
                 </article>
-            </li>
-            <li class="reviews-section__item">
-                <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Ірина</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
-                    </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton" id="playButton">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <video class="reviews-video" id="myVideo" preload="metadata">
-                            <source src="video.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </article>
-            </li>
-            <li class="reviews-section__item">
-                <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Ірина</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
-                    </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton play-button">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <div class="modal video-modal"  style="display: none;">
-                            <span class="close close-button">&times;</span>
-                            <video class="modal-video"  controls>
-                                <source src="" type="video/mp4">
-                                Ваш браузер не підтримує відео.
-                            </video>
-                        </div>
-                    </div>
-                </article>
-            </li>
-            <li class="reviews-section__item">
-                <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Ірина</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
-                    </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton play-button">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <div class="modal video-modal"  style="display: none;">
-                            <span class="close close-button">&times;</span>
-                            <video class="modal-video"  controls>
-                                <source src="" type="video/mp4">
-                                Ваш браузер не підтримує відео.
-                            </video>
-                        </div>
-                    </div>
-                </article>
-            </li>
-            <li class="reviews-section__item">
-                <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Ірина</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
-                    </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton play-button">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <div class="modal video-modal"  style="display: none;">
-                            <span class="close close-button">&times;</span>
-                            <video class="modal-video"  controls>
-                                <source src="" type="video/mp4">
-                                Ваш браузер не підтримує відео.
-                            </video>
-                        </div>
-                    </div>
-                </article>
-            </li>
-            <li class="reviews-section__item">
-                <article class="reviews-section__card">
-                    <div class="reviews-section__card-title">
-                      <img class="reviews-image" src="./images/reviews1.png" alt="фото Оленки">
-                      <div class="reviews__title-container">
-                        <h5>Ірина</h5>
-                        <p>Курс “Елементи”</p>
-                      </div>
-                    </div>
-                    <p class="reviews-text">Христинко, я щиро вдячна за час,який ти приділила мені.<br>
-                     Твої слова,ніби такі прості,а сила їх величезна. От одночасно приземлити<br>
-                     (хоча нітільки сказати правду,яку відмовлялася чути) і окрилити, <br>
-                     можуть тільки великі люди... <br>
-                      Дякую за практичні поради за зміну мислення ,позитив і прямоту.
-                    </p>
-                    <div class="reviews-section__videocard-container">
-                        <div class="reviews-section__videocard-playbutton play-button">
-                            <img src="./images/play-button.png" alt="дивитись" class="reviews-section__videocard-playicon">
-                            <span class="reviews-section__videocard-buttontext">Дивитись відео-відгук</span>
-                        </div>
-                        <div class="modal video-modal"  style="display: none;">
-                            <span class="close close-button">&times;</span>
-                            <video class="modal-video"  controls>
-                                <source src="" type="video/mp4">
-                                Ваш браузер не підтримує відео.
-                            </video>
-                        </div>
-                    </div>
-                </article>
-            </li>
+              </li>
         </ul>
-             <div class="navigation">
-               <div class="nav-btns">
-                <button 
-                id="prevBtn" 
-                class="nav-button" 
+        <div class="navigation">
+            <div class="nav-btns">
+              <button
+                id="nextBtn"
+                class="nav-button"
                 type="button"
-                title="назад"
-                aria-label="кнопка назад">&lt;</button>
-                <button 
-                id="nextBtn" 
-                class="nav-button is-active"
+                title="forward"
+                aria-label="forward button"
+              >
+                &lt;
+              </button>
+              <button
+                id="prevBtn"
+                class="nav-button"
                 type="button"
-                title="вперед"
-                aria-label="кнопка вперед">&gt;</button>
-               </div>
-                <div class="slider-line"></div>
-                <span id="counter" class="counter">01/10</span>
+                title="go back"
+                aria-label="back button"
+              >
+                &gt;
+              </button>
             </div>
+            <div class="slider-line"></div>
+            <span id="counter" class="counter">01/05</span>
+        </div>
         </div>
     </section>
    </main>
@@ -1084,8 +1657,8 @@
                 <a 
                 class="footer__nav-logo"
                 href="/"
-                aria-label="Головна"
-                title="Головна">
+                aria-label="Home"
+                title="Home">
                   <img 
                   class="logo__image"
                   src="./images/footer-logo.png" 
@@ -1095,7 +1668,7 @@
                 </a>
              <div class="footer-link">
                 <a href="#" class="footer__nav-link">Educational Program "Elements"</a>
-                <a href="#" class="footer__nav-link">Business consulting</a> 
+                <a href="./modal-1-en.html" class="footer__nav-link">Business consulting</a> 
                 <a href="#" class="footer__nav-link">Production & Launch of Info Products</a> 
                 <a href="#" class="footer__nav-link">Personal Coaching with Khrystyna</a> 
              </div>
@@ -1109,18 +1682,17 @@
                     class="footer_extra-link" 
                     target="_blank" 
                     rel="noopener" 
-                    aria-label="Перейти"
-                    >
-                    Політика конфіденційності
+                    aria-label="go on"
+                    >Privacy Policy
                    </a>
                    <a 
                     href="https://example.com" 
                     class="footer_extra-link" 
                     target="_blank" 
                     rel="noopener" 
-                    aria-label="Перейти"
+                    aria-label="go on"
                     >
-                    Договір публічної оферти
+                    Public offer agreement
                    </a>
                </div>
                <div class="footer__extra-right">
@@ -1154,5 +1726,119 @@
             </nav>
     </div>
    </footer>
+
+   <div class="form-wrapper hidden" id="form-wrapper">
+    <div class="form-modal">
+      <div class="form-img-container">
+        <img
+          class="form-img"
+          src="./images/form-img.png"
+          alt="фото Христини"
+        />
+        <p class="img-container__text">
+          On my journey, I missed the current me,<br> 
+          who would take my hand and show me<br> how business 
+          works and when it succeeds.
+        </p>
+        <p class="img-container__subtext">
+          Khrystyna Didukh /
+          <span class="img__subtext-accent">Founder & CEO</span>
+        </p>
+      </div>
+      <div class="consultation-form-container">
+        <h2 class="form-title">Order a consultation</h2>
+        <p class="form-subtitle">Fill out the form and we will contact you.</p>
+
+        <form class="consultation-form" id="consultation-form">
+          <div class="form-row">
+            <div class="label-input">
+              <label for="first-name">First name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                placeholder="mail@simmmple.com"
+                required
+              />
+            </div>
+            <div class="label-input">
+              <label for="last-name">Last name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                placeholder="Min. 8 characters"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-column">
+            <div class="label-input">
+              <label for="phone">Phone number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="38 (0__) ___ __ __"
+                required
+              />
+            </div>
+
+            <div class="label-input">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="mail@simmmple.com"
+                required
+              />
+            </div>
+          </div>
+
+          <h3 class="product-selection-title">Choose a product</h3>
+          <div class="product-options">
+            <label>
+              <input
+                type="radio"
+                name="product"
+                value="curriculumElements"
+                required
+              />
+              Educational Program "Elements"
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="product"
+                value="businesConsulting"
+              />
+              Business consulting
+            </label>
+            <label>
+              <input type="radio" name="product" value="producing&launch" />
+              Production & Launch of Info Products
+            </label>
+            <label>
+              <input type="radio" name="product" value="personalWork" />
+              Personal Coaching with Khrystyna
+            </label>
+          </div>
+
+          <button type="submit" class="submit-button">
+           Order a consultation
+            <img
+              src="./icons/black-arrow.svg"
+              alt="icon"
+              class="submit-button-img"
+            />
+          </button>
+        </form>
+      </div>
+      <button class="close-form" type="button">&times;</button>
+    </div>
+  </div>
 </body>
 </html> 
+
