@@ -548,9 +548,16 @@ html, body {
   }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (min-width: 363px) and (max-width: 390px) {
     .modal_footer-img {
         height: 91px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .modal_footer-img {
+        height: 121px;
+        width: 121px;
     }
 }
 
