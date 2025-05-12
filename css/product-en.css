@@ -58,7 +58,7 @@ html, body {
     .product-modal_2 {
         margin-block: 10px 30px;
         margin-inline: auto;
-        max-height: 1410px;
+        max-height: 1458px;
         height: auto;
         width: 99%;
         padding-inline: 20px;
@@ -542,10 +542,16 @@ html, body {
     }   
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 391px) and (max-width: 480px) {
 .modal_footer-img {
     height: 71px;
   }
+}
+
+@media screen and (max-width: 390px) {
+    .modal_footer-img {
+        height: 91px;
+    }
 }
 
 .modal-footer-videocard {
@@ -578,12 +584,6 @@ html, body {
     margin-block-end: 10px;
 }
 
-@media screen and (max-width: 480px) {
-    .footer-nav-container {
-        display: inline-flex;
-    } 
-}
-
 .footer-nav-container_2 {
     margin-block-end: 10px;
     max-height: 304px;
@@ -592,7 +592,7 @@ html, body {
 
 @media screen and (max-width: 480px) {
     .footer-nav-container_2 {
-        margin-block-end: 0;
+        margin-block-end: 20px;
         max-height: 311px;
         max-width: 1220px;
         width: 100%;
@@ -674,9 +674,17 @@ html, body {
     color: var(--color-light);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 391px) and (max-width: 480px) {
     .modal-footer-title {
         font-size: 22px;
+        margin-block-end: 24px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .modal-footer-title {
+        font-size: 20px;
+        margin-block-end: 22px;
     }
 }
 
