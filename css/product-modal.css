@@ -578,12 +578,6 @@ html, body {
     margin-block-end: 10px;
 }
 
-@media screen and (max-width: 480px) {
-    .footer-nav-container {
-        display: inline-flex;
-    } 
-}
-
 .footer-nav-container_2 {
     margin-block-end: 10px;
     max-height: 304px;
