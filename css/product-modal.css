@@ -666,11 +666,13 @@ html, body {
     font-size: 28px;
     font-weight: 500;
     color: var(--color-light);
+    margin-block-end: 24px;
 }
 
 @media screen and (max-width: 480px) {
     .modal-footer-title {
         font-size: 22px;
+        margin-block-end: 24px;
     }
 }
 
