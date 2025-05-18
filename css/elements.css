@@ -4558,7 +4558,7 @@ z-index: -1;
     .tarif-section {
         padding-block: 60px 80px;
         padding-inline: 20px;
-        height: 2497px;
+        height: auto;
         position: relative;
         margin-block-end: 80px;
     }  
@@ -4632,7 +4632,7 @@ z-index: -1;
     .tarif-container {
         flex-direction: column;
         gap: 50px;
-        height: 817px;
+        height: auto;
         width: 100%;
     } 
 }
