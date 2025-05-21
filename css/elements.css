@@ -919,7 +919,7 @@ svg * {
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
     position: absolute;
-    top: 636px;
+    top: 600px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -1039,7 +1039,7 @@ svg * {
     height: auto;
     padding-block: 32px;
     padding-inline: 14px;
-    margin-block-start: -72px;
+    margin-block-start: -108px;
     margin-inline: auto;
   }
 }
