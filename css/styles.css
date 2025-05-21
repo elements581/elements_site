@@ -3207,10 +3207,10 @@ details {
     align-items: center;
     justify-content: center;
     gap: 40px;
-    margin-block: 5px 15px;
+    margin-block: 5px;
     margin-inline: auto;
     background: var(--color-light);
-    height: 100dvh;
+    height: 98dvh;
     width: 92%;
     border: none;
     border-radius: 24px;
