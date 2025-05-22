@@ -3364,7 +3364,6 @@ svg * {
   .back-img {
     height: 42px;
     margin-block: 0 6px;
-    margin-inline-start: 50%;
   }
 }
 
@@ -3377,7 +3376,6 @@ svg * {
   .back-img-1 {
     height: 42px;
     margin-block: 0 10px;
-    margin-inline-start: 50%;
   }
 }
 
