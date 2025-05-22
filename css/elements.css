@@ -3370,7 +3370,7 @@ svg * {
 
 .back-img-1 {
   height: 62px;
-  margin-block: 20 12px;
+  margin-block: 20px 12px;
 }
 
 @media screen and (max-width: 480px) {
