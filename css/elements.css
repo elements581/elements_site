@@ -4803,6 +4803,8 @@ svg * {
 }
 
 .tarif-card {
+  display: flex;
+  flex-direction: column;
   max-width: 370px;
   width: calc(100% / 3);
   border: none;
@@ -4977,6 +4979,8 @@ svg * {
 @media screen and (max-width: 480px) {
   .tarif-action {
     flex-direction: column;
+    width: 80%;
+    margin-inline: auto;  
   }
 }
 
