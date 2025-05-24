@@ -4821,8 +4821,7 @@ svg * {
 }
 
 .tarif-1 {
-  min--height: 551px;
-  height: auto;
+  height: 551px;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
@@ -4831,8 +4830,7 @@ svg * {
 
 .tarif-2 {
   position: relative;
-  min-height: 759px;
-  height: auto;
+  height: 759px;
   background: linear-gradient(
     0deg,
     rgba(129, 148, 236, 0.5) 0%,
@@ -4844,8 +4842,7 @@ svg * {
 }
 
 .tarif-3 {
-  min-height: 863px;
-  height: auto;
+  height: 863px;
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(100px);
   backdrop-filter: blur(100px);
