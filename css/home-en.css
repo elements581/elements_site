@@ -1763,6 +1763,7 @@
     z-index: -2;
     border: none;
     border-radius: 35px;
+    opacity: 0.9;
   }
   
   .diagnostic-overlay {
