@@ -1726,6 +1726,7 @@
     gap: 10px;
     margin-block-end: 70px;
     max-height: 393px;
+    width: 100%;
   }
   
   @media screen and (max-width: 480px) {
@@ -1741,6 +1742,7 @@
     border-radius: 30px;
     height: 393px;
     max-width: 814px;
+    width: 61%;
     position: relative;
   }
   
@@ -1781,6 +1783,7 @@
   .diagnostic-section__videocard {
     height: 393px;
     max-width: 456px;
+    width: 39%;
   }
   
   @media screen and (max-width: 480px) {
